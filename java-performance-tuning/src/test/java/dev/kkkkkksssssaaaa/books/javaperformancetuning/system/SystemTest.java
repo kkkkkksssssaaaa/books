@@ -2,6 +2,7 @@ package dev.kkkkkksssssaaaa.books.javaperformancetuning.system;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Map;
 import java.util.Properties;
 
 class SystemTest {
@@ -29,6 +30,19 @@ class SystemTest {
             .forEachRemaining(key -> {
                 System.out.println("key = " + key);
                 System.out.println("value = " + prop.get(key));
+            });
+    }
+
+    @Test
+    void envTest() {
+        Map<String, String> envMap = System.getenv();
+
+        envMap.keySet()
+            .stream()
+            .iterator()
+            .forEachRemaining(key -> {
+                System.out.println("key = " + key);
+                System.out.println("value = " + envMap.get(key));
             });
     }
 }
