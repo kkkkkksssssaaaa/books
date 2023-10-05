@@ -1,5 +1,6 @@
 package dev.kkkkkksssssaaaa.books.javaperformancetuning.io;
 
+import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -83,5 +84,31 @@ class FileReaderTest {
         }
 
         return retSb.toString();
+    }
+
+    public ArrayList readBufferedReader(String fileName) throws Exception {
+        ArrayList<String> list = new ArrayList<>();
+        BufferedReader br = null;
+
+        try {
+            br = new BufferedReader(new FileReader(fileName));
+            String data;
+
+            while((data = br.readLine()) != null) {
+                list.add(data);
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            throw e;
+        } finally {
+            if (br != null) {
+                br.close();
+            }
+        }
+
+        return list;
     }
 }
