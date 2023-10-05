@@ -8,6 +8,8 @@ class FileReaderTest {
 
     void doTest() throws Exception {
         String fileName = "some file";
+        // 10MB 파일을 처리할 때 2,480초가 소요 되었 다고 한다
+        // 이러한 결과의 원인은 문자열을 하나씩 읽도록 되어 있기 때문
         ArrayList list1 = readCharStream(fileName);
     }
 
