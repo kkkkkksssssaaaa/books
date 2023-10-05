@@ -45,4 +45,38 @@ class FileReaderTest {
 
         return list;
     }
+
+    public String readCharStreamWithBuffer(String fileName) throws Exception {
+        StringBuffer retSb = new StringBuffer();
+        FileReader fr = null;
+
+        try {
+            fr = new FileReader(fileName);
+            int bufferSize = 1024 * 1024;
+            char[] readBuffer = new char[bufferSize];
+            int resultSize = 0;
+
+            while((resultSize = fr.read(readBuffer)) != -1) {
+                if (resultSize == bufferSize) {
+                    retSb.append(readBuffer);
+                } else {
+                    for (int i = 0; i < resultSize; i++) {
+                        retSb.append(readBuffer[i]);
+                    }
+                }
+            }
+        } catch (IOException e) {
+            System.err.println(e.getMessage());
+            throw e;
+        } catch (Exception e) {
+            System.err.println(e.getMessage());
+            throw e;
+        } finally {
+            if (fr != null) {
+                fr.close();
+            }
+        }
+
+        return retSb.toString();
+    }
 }
