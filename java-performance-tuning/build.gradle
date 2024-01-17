@@ -1,3 +1,14 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.7'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+version '0.0.1-SNAPSHOT'
+
+group 'dev.kkkkkksssssaaaa.books.javaperformancetuning'
+version '0.0.1-SNAPSHOT'
+
 bootJar {
     enabled = false
 }
@@ -9,6 +20,10 @@ jar {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+repositories {
+    mavenCentral()
 }
 
 tasks.named('test') {
