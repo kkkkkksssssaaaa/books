@@ -5,11 +5,6 @@ import org.junit.jupiter.api.Test
 
 class Atom52 {
     @Test
-    fun doTest() {
-
-    }
-
-    @Test
     fun labeledReturn() {
         val list = listOf(1, 2, 3, 4, 5)
         val value = 3
@@ -32,5 +27,28 @@ class Atom52 {
         println(">>> final result=$result")
 
         assertEquals(result, "12345")
+    }
+
+    @Test
+    fun useAnonymousFunction() {
+        val list = listOf(1, 2, 3, 4, 5)
+        val value = 3
+        var result2 = ""
+
+        list.forEach(fun (it) {
+            println("it=$it")
+            println("result=$result2")
+            result2 += "$it"
+
+            if (it == value) {
+                println("it is equal value!")
+                // forEach 의 리턴형은 Unit 이라 아무런 일도 일어나지 않는다...
+                return
+            }
+        })
+
+        println(">>> final result=$result2")
+
+        assertEquals(result2, "12345")
     }
 }
