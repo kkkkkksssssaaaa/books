@@ -44,3 +44,29 @@ data class Person(
     val name: String,
     val age: Int
 )
+
+class Box<T>(
+    private var contents: T
+) {
+    fun put(item: T) {
+        contents = item
+    }
+
+    fun get(): T = contents
+}
+
+// in 키워드를 사용하면 T 를 반환할 수 없다
+class InBox<in T>(
+    private var contents: T
+) {
+    fun put(item: T) {
+        contents = item
+    }
+}
+
+// out 키워드를 사용하면 T 를 클래스 내부로 가져올 수 없다
+class OutBox<out T>(
+    private var contents: T
+) {
+    fun get(): T = contents
+}
