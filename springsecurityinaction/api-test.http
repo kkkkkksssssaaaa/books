@@ -1,6 +1,6 @@
 # curl -u user:96d3c532-edc8-471b-8ac3-f80a122ff987 http://localhost:8080/hello
 GET https://localhost:8080/hello
-Authorization: Basic user 1a28d732-4605-4081-ba68-0ec09e451b9f
+Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 
 ###
 
