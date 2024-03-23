@@ -10,7 +10,7 @@ import org.springframework.security.crypto.password.PasswordEncoder
 import org.springframework.security.provisioning.InMemoryUserDetailsManager
 
 @Configuration
-class SecurityConfiguration {
+class SecurityUserConfiguration {
     @Bean
     fun userDetailsService(): UserDetailsService {
         val userDetailsService = InMemoryUserDetailsManager()
