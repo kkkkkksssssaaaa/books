@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.user
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
