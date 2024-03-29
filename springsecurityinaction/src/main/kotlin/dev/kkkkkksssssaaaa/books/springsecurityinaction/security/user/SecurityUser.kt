@@ -1,25 +1,26 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.user
 
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.User
 import org.springframework.security.core.GrantedAuthority
 import org.springframework.security.core.authority.SimpleGrantedAuthority
 import org.springframework.security.core.userdetails.UserDetails
 
 class SecurityUser(
-    private val user: User
+    private val username: String,
+    private val password: String,
+    private val authority: String
 ): UserDetails {
     override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
         return mutableListOf(
-            SimpleGrantedAuthority(user.authority)
+            SimpleGrantedAuthority(this.authority)
         )
     }
 
     override fun getUsername(): String {
-        return user.username
+        return this.username
     }
 
     override fun getPassword(): String {
-        return user.password
+        return this.password
     }
 
     override fun isAccountNonExpired(): Boolean {

@@ -13,16 +13,12 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager
 class SecurityUserConfiguration {
     @Bean
     fun userDetailsService(): UserDetailsService {
-        val userDetailsService = InMemoryUserDetailsManager()
-
         val user: UserDetails = User.withUsername("kkkkkksssssaaaa")
             .password("kkkkkksssssaaaa")
             .authorities("read")
             .build()
 
-        userDetailsService.createUser(user)
-
-        return userDetailsService
+        return InMemoryUserDetailsService(listOf(user))
     }
 
     @Bean
