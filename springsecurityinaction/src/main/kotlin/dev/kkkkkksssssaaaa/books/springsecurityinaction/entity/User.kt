@@ -7,9 +7,9 @@ import org.springframework.data.domain.Persistable
 
 @Entity(name = "`user`")
 class User(
-    id: Long?,
     username: String,
     password: String,
+    id: Long? = null,
     enabled: Boolean = true
 ): Persistable<Long> {
     @Id

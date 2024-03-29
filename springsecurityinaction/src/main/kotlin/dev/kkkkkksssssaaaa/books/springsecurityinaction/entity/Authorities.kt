@@ -7,9 +7,9 @@ import org.springframework.data.domain.Persistable
 
 @Entity(name = "authorities")
 class Authorities(
-    id: Long?,
     username: String,
-    authority: String
+    authority: String,
+    id: Long? = null,
 ): Persistable<Long> {
     @Id
     private var id: Long? = id
