@@ -5,12 +5,11 @@ import jakarta.persistence.Entity
 import jakarta.persistence.Id
 import org.springframework.data.domain.Persistable
 
-@Entity(name = "`user`")
-class User(
+@Entity(name = "authorities")
+class Authorities(
     id: Long?,
     username: String,
-    password: String,
-    enabled: Boolean = true
+    authority: String
 ): Persistable<Long> {
     @Id
     private var id: Long? = id
@@ -19,12 +18,8 @@ class User(
     var username: String = username
         protected set
 
-    @Column(name = "`password`")
-    var password: String = password
-        protected set
-
-    @Column(name = "`enabled`")
-    var enabled: Boolean = enabled
+    @Column(name = "`authority`")
+    var authority: String = authority
         protected set
 
     override fun getId(): Long? {
