@@ -24,4 +24,14 @@ class HelloController(
     fun bye() {
         log.info("bye bye, ${currentUser.name()}!!")
     }
+
+    @GetMapping("/ciao")
+    fun ciao(): String {
+        return "Ciao, ${currentUser.ciao()}!"
+    }
+
+    @GetMapping("/hola")
+    fun hola(): String {
+        return "Hola, ${currentUser.hola()}!"
+    }
 }

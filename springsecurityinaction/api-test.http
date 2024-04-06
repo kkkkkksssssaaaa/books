@@ -6,3 +6,11 @@ Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 GET https://localhost:8080/bye
 Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 
+###
+GET https://localhost:8080/ciao
+Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
+
+###
+GET https://localhost:8080/hola
+Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
+
