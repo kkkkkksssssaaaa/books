@@ -14,9 +14,11 @@ class PasswordEncoderConfiguration {
     fun delegatingPasswordEncoder(): PasswordEncoder {
         val encoders: Map<String, PasswordEncoder> =
             mapOf(
-                "noop" to noOpsPasswordEncoder(),
-                "bcrypt" to bcryptPasswordEncoder(),
-                "scrypt" to scryptPasswordEncoder()
+                PasswordEncoderConstants.NO_OP.key to noOpsPasswordEncoder(),
+                PasswordEncoderConstants.BCRYPT.key to bcryptPasswordEncoder(),
+                PasswordEncoderConstants.SCRYPT.key to scryptPasswordEncoder(),
+                PasswordEncoderConstants.PLAIN_TEXT.key to plainTextPasswordEncoder(),
+                PasswordEncoderConstants.SHA_512.key to sha512PasswordEncoder()
             )
 
         return DelegatingPasswordEncoder("bcrypt", encoders)
@@ -35,5 +37,15 @@ class PasswordEncoderConfiguration {
     @Bean
     fun noOpsPasswordEncoder(): PasswordEncoder {
         return NoOpPasswordEncoder.getInstance()
+    }
+
+    @Bean
+    fun plainTextPasswordEncoder(): PasswordEncoder {
+        return PlainTextPasswordEncoder()
+    }
+
+    @Bean
+    fun sha512PasswordEncoder(): PasswordEncoder {
+        return Sha512PasswordEncoder()
     }
 }

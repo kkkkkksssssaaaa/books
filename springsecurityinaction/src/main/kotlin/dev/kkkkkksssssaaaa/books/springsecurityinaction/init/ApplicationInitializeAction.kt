@@ -4,6 +4,7 @@ import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.Authorities
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.AuthoritiesRepository
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.User
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.UserRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.security.password.PasswordEncoderConstants
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.crypto.password.PasswordEncoder
@@ -22,11 +23,15 @@ class ApplicationInitializeAction(
 
     @Bean
     fun doAction(): Boolean {
+        val encodedPassword: String =
+            PasswordEncoderConstants.BCRYPT.wrappedKey() + bcryptPasswordEncoder.encode(PASSWORD)
+
+
         userRepository.save(
             User(
                 id = 1,
                 username = USERNAME,
-                password = "{bcrypt}${bcryptPasswordEncoder.encode(PASSWORD)}",
+                password = encodedPassword,
                 enabled = true
             )
         )
