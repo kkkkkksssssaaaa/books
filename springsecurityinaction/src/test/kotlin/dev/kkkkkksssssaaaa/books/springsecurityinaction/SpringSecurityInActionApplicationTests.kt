@@ -1,13 +1,12 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction
 
 import org.junit.jupiter.api.Test
-import org.springframework.boot.test.context.SpringBootTest
+import java.security.SecureRandom
 
-@SpringBootTest
 class SpringSecurityInActionApplicationTests {
-
     @Test
-    fun contextLoads() {
+    fun createSecureRandom() {
+        println("secureRandom=${SecureRandom.getInstanceStrong()}")
+        Thread.sleep(5000)
     }
-
 }
