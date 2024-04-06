@@ -27,7 +27,7 @@ class JpaUserDetailsManager(
             val authority: String =
                 authorities.findAllByUsername(username)
                     .first()
-                    .toString()
+                    .authority
 
             SecurityUser(
                 username = it.username,
@@ -75,10 +75,12 @@ class JpaUserDetailsManager(
     }
 
     override fun changePassword(oldPassword: String, newPassword: String) {
-        TODO("Not yet implemented")
+        TODO("This feature was not implemented")
     }
 
     override fun userExists(username: String): Boolean {
-        TODO("Not yet implemented")
+        return users.findByUsername(username)?.let {
+            true
+        } ?: false
     }
 }

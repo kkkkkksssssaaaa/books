@@ -6,11 +6,13 @@ import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.User
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.UserRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.crypto.password.PasswordEncoder
 
 @Configuration
 class ApplicationInitializeAction(
     private val userRepository: UserRepository,
-    private val authoritiesRepository: AuthoritiesRepository
+    private val authoritiesRepository: AuthoritiesRepository,
+    private val bcryptPasswordEncoder: PasswordEncoder
 ) {
     companion object {
         private const val USERNAME: String = "kkkkkksssssaaaa"
@@ -24,7 +26,7 @@ class ApplicationInitializeAction(
             User(
                 id = 1,
                 username = USERNAME,
-                password = PASSWORD,
+                password = "{bcrypt}${bcryptPasswordEncoder.encode(PASSWORD)}",
                 enabled = true
             )
         )

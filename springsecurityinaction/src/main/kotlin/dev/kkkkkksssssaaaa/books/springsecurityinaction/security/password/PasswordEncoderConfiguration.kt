@@ -11,14 +11,29 @@ import org.springframework.security.crypto.scrypt.SCryptPasswordEncoder
 @Configuration
 class PasswordEncoderConfiguration {
     @Bean
-    fun passwordEncoder(): PasswordEncoder {
+    fun delegatingPasswordEncoder(): PasswordEncoder {
         val encoders: Map<String, PasswordEncoder> =
             mapOf(
-                "noop" to NoOpPasswordEncoder.getInstance(),
-                "bycrypt" to BCryptPasswordEncoder(),
-                "scrypt" to SCryptPasswordEncoder(16384, 8, 1, 32, 64)
+                "noop" to noOpsPasswordEncoder(),
+                "bcrypt" to bcryptPasswordEncoder(),
+                "scrypt" to scryptPasswordEncoder()
             )
 
         return DelegatingPasswordEncoder("bcrypt", encoders)
+    }
+
+    @Bean
+    fun bcryptPasswordEncoder(): PasswordEncoder {
+        return BCryptPasswordEncoder()
+    }
+
+    @Bean
+    fun scryptPasswordEncoder(): PasswordEncoder {
+        return SCryptPasswordEncoder(16384, 8, 1, 32, 64)
+    }
+
+    @Bean
+    fun noOpsPasswordEncoder(): PasswordEncoder {
+        return NoOpPasswordEncoder.getInstance()
     }
 }
