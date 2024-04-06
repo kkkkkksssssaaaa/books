@@ -1,10 +1,10 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.init
 
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.Authorities
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.AuthoritiesRepository
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.User
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.UserRepository
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.security.password.PasswordEncoderConstants
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.User
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.UserRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PasswordEncoderConstants
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.crypto.password.PasswordEncoder

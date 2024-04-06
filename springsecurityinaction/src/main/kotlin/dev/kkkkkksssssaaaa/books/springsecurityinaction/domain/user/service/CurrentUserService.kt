@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.service
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.service
 
 import org.springframework.security.core.context.SecurityContextHolder
 import org.springframework.stereotype.Service

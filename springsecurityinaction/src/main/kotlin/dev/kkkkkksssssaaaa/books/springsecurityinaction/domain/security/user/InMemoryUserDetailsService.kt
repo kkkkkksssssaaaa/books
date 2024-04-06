@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.user
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.user
 
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UserDetailsService

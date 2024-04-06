@@ -1,9 +1,9 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.user
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.user
 
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.Authorities
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.AuthoritiesRepository
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.User
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.entity.UserRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.User
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.UserRepository
 import org.slf4j.LoggerFactory
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UsernameNotFoundException

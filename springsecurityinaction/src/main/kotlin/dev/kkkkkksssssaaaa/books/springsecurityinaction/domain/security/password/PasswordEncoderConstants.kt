@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.password
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password
 
 enum class PasswordEncoderConstants(
     val key: String

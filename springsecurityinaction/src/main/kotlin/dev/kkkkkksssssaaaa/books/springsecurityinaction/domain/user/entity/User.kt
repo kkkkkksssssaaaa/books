@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.entity
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity
 
 import jakarta.persistence.Column
 import jakarta.persistence.Entity

@@ -1,4 +1,4 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.password
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password
 
 import org.springframework.security.crypto.password.PasswordEncoder
 import java.security.MessageDigest

@@ -1,14 +1,14 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.config
 
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.security.provider.CustomAuthenticationProvider
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
+import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.web.SecurityFilterChain
 
 @Configuration
 class WebSecurityConfiguration(
-    private val customAuthenticationProvider: CustomAuthenticationProvider
+    private val authenticationProvider: AuthenticationProvider
 ) {
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
@@ -16,7 +16,7 @@ class WebSecurityConfiguration(
 
         }.authorizeHttpRequests { config ->
             config.anyRequest().authenticated()
-        }.authenticationProvider(customAuthenticationProvider)
+        }.authenticationProvider(authenticationProvider)
         return http.build()
     }
 }

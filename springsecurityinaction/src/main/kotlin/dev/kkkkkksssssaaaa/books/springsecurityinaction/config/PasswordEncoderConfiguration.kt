@@ -1,5 +1,8 @@
-package dev.kkkkkksssssaaaa.books.springsecurityinaction.security.password
+package dev.kkkkkksssssaaaa.books.springsecurityinaction.config
 
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PasswordEncoderConstants
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PlainTextPasswordEncoder
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.Sha512PasswordEncoder
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder
