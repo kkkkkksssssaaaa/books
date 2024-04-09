@@ -1,5 +1,6 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.config
 
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.handler.CustomEntryPoint
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.AuthenticationProvider
@@ -21,6 +22,7 @@ class WebSecurityConfiguration(
                 .successHandler(successHandler)
                 .failureHandler(failureHandler)
         }.httpBasic {
+            it.authenticationEntryPoint(CustomEntryPoint())
         }.authorizeHttpRequests {
             it.anyRequest()
                 .authenticated()
