@@ -9,7 +9,7 @@ class InMemoryUserDetailsService(
 ): UserDetailsService {
     override fun loadUserByUsername(username: String?): UserDetails {
         return try {
-            return users.first { u -> u.username == username }
+            users.first { u -> u.username == username }
         } catch (ex: NoSuchElementException) {
             throw UsernameNotFoundException("$username is not found!")
         }

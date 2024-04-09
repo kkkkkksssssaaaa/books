@@ -22,17 +22,17 @@ class JpaUserDetailsManager(
 
     @Transactional(readOnly = true)
     override fun loadUserByUsername(username: String): UserDetails {
-        log.info("하이헬로안녕")
+        log.info("find user details, username=$username")
+
         return users.findByUsername(username)?.let {
-            val authority: String =
+            val authorities: List<String> =
                 authorities.findAllByUsername(username)
-                    .first()
-                    .authority
+                    .map { it.authority }
 
             SecurityUser(
                 username = it.username,
                 password = it.password,
-                authority = authority
+                authorities = authorities
             )
         } ?: throw UsernameNotFoundException("$username is not found!")
     }

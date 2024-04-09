@@ -19,13 +19,13 @@ class ApplicationInitializeAction(
         private const val USERNAME: String = "kkkkkksssssaaaa"
         private const val PASSWORD: String = "kkkkkksssssaaaa"
         private const val WRITE: String = "write"
+        private const val READ: String = "read"
     }
 
     @Bean
     fun doAction(): Boolean {
         val encodedPassword: String =
             PasswordEncoderConstants.BCRYPT.wrappedKey() + bcryptPasswordEncoder.encode(PASSWORD)
-
 
         userRepository.save(
             User(
@@ -41,6 +41,14 @@ class ApplicationInitializeAction(
                 id = 1,
                 username = USERNAME,
                 authority = WRITE
+            )
+        )
+
+        authoritiesRepository.save(
+            Authorities(
+                id = 2,
+                username = USERNAME,
+                authority = READ
             )
         )
 

@@ -5,16 +5,22 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.security.authentication.AuthenticationProvider
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.web.SecurityFilterChain
+import org.springframework.security.web.authentication.AuthenticationFailureHandler
+import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 
 @Configuration
 class WebSecurityConfiguration(
-    private val authenticationProvider: AuthenticationProvider
+    private val authenticationProvider: AuthenticationProvider,
+    private val successHandler: AuthenticationSuccessHandler,
+    private val failureHandler: AuthenticationFailureHandler
 ) {
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
         return http.formLogin {
             it.permitAll()
-                .defaultSuccessUrl("/home", true)
+                .successHandler(successHandler)
+                .failureHandler(failureHandler)
+        }.httpBasic {
         }.authorizeHttpRequests {
             it.anyRequest()
                 .authenticated()
