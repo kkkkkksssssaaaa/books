@@ -13,7 +13,8 @@ class WebSecurityConfiguration(
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
         http.httpBasic { config ->
-
+            config.realmName("OTHER")
+                .authenticationEntryPoint(CustomEntryPoint())
         }.authorizeHttpRequests { config ->
             config.anyRequest().authenticated()
         }.authenticationProvider(authenticationProvider)
