@@ -12,12 +12,13 @@ class WebSecurityConfiguration(
 ) {
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
-        http.httpBasic { config ->
-            config.realmName("OTHER")
-                .authenticationEntryPoint(CustomEntryPoint())
-        }.authorizeHttpRequests { config ->
-            config.anyRequest().authenticated()
+        return http.formLogin {
+            it.permitAll()
+                .defaultSuccessUrl("/home", true)
+        }.authorizeHttpRequests {
+            it.anyRequest()
+                .authenticated()
         }.authenticationProvider(authenticationProvider)
-        return http.build()
+        .build()
     }
 }

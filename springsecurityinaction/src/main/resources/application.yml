@@ -11,8 +11,12 @@ spring:
       hibernate:
         format_sql: true
         show_sql: true
+  mvc:
+    static-path-pattern: /static/**
+
 server:
   ssl:
     key-store: classpath:certificate.p12
     key-store-type: PKCS12
     key-store-password: 1234
+  port: 8080
