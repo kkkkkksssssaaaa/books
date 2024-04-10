@@ -42,7 +42,6 @@ class JpaUserDetailsManager(
             User(
                 username = securityUser.username,
                 password = securityUser.password,
-                enabled = true
             )
         )
 

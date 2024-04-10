@@ -1,5 +1,7 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.init
 
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.Product
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.ProductRepository
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.User
@@ -13,6 +15,7 @@ import org.springframework.security.crypto.password.PasswordEncoder
 class ApplicationInitializeAction(
     private val userRepository: UserRepository,
     private val authoritiesRepository: AuthoritiesRepository,
+    private val productRepository: ProductRepository,
     private val bcryptPasswordEncoder: PasswordEncoder
 ) {
     companion object {
@@ -32,7 +35,7 @@ class ApplicationInitializeAction(
                 id = 1,
                 username = USERNAME,
                 password = encodedPassword,
-                enabled = true
+                algorithm = PasswordEncoderConstants.BCRYPT.key
             )
         )
 
@@ -49,6 +52,15 @@ class ApplicationInitializeAction(
                 id = 2,
                 username = USERNAME,
                 authority = READ
+            )
+        )
+
+        productRepository.save(
+            Product(
+                id = 1,
+                name = "Chocolate",
+                price = "10",
+                currency = "USD"
             )
         )
 

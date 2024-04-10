@@ -23,7 +23,7 @@ class CustomAuthenticationSuccessHandler: AuthenticationSuccessHandler {
                 authorityObject.authority == "read"
             }?.let {
                 log.info("authentication success!")
-                response.sendRedirect("/home")
+                response.sendRedirect("/main")
             } ?: {
                 log.info("authentication failed! redirect to error page.")
                 response.sendRedirect("/error")

@@ -1,5 +1,6 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity
 
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PasswordEncoderConstants
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.Id
@@ -10,7 +11,7 @@ class User(
     username: String,
     password: String,
     id: Long? = null,
-    enabled: Boolean = true
+    algorithm: String = PasswordEncoderConstants.BCRYPT.key
 ): Persistable<Long> {
     @Id
     private var id: Long? = id
@@ -23,8 +24,8 @@ class User(
     var password: String = password
         protected set
 
-    @Column(name = "`enabled`")
-    var enabled: Boolean = enabled
+    @Column(name = "`algorithm`")
+    var algorithm: String = algorithm
         protected set
 
     override fun getId(): Long? {
