@@ -1,15 +1,13 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import org.springframework.data.domain.Persistable
 
 @Entity(name = "`product`")
 class Product(
     name: String,
     price: String,
-    currency: String,
+    currency: ProductCurrency,
     id: Long? = null
 ): Persistable<Long> {
     @Id
@@ -24,7 +22,8 @@ class Product(
         protected set
 
     @Column(name = "`currency`")
-    var currency: String = currency
+    @Enumerated(EnumType.STRING)
+    var currency: ProductCurrency = currency
         protected set
 
     override fun getId(): Long? {
