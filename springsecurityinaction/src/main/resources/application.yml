@@ -12,7 +12,8 @@ spring:
         format_sql: true
         show_sql: true
   mvc:
-    static-path-pattern: /static/**
+    static-path-pattern: classpath:/static/**
+
 
 server:
   ssl:

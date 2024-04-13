@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+<h2 th:text="'hello, ' + ${username} + '!'" />
+<p>
+    <a href="/logout">Sign out here</a>
+</p>
+
+<h2>These are all the products:</h2>
+<table>
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:if="${products.empty}">
+            <td colspan="2">No products available</td>
+        </tr>
+        <tr th:each="book : ${products}">
+            <td>
+                <span th:text="${book.name}">Name</span>
+            </td>
+            <td>
+                <span th:text="${book.price}">Price</span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

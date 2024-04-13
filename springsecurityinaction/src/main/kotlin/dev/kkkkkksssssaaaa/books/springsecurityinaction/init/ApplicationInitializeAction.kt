@@ -1,6 +1,7 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.init
 
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.Product
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.ProductCurrency
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.ProductRepository
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
@@ -60,7 +61,7 @@ class ApplicationInitializeAction(
                 id = 1,
                 name = "Chocolate",
                 price = "10",
-                currency = "USD"
+                currency = ProductCurrency.USD
             )
         )
 
