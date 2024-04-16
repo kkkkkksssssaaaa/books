@@ -12,7 +12,6 @@ import org.springframework.transaction.annotation.Transactional
 class JpaUserDetailsManager(
     private val users: UserRepository,
     private val authorities: AuthoritiesRepository,
-    private val roles: RolesRepository
 ): UserDetailsManager {
     companion object {
         private val log = LoggerFactory.getLogger(JpaUserDetailsManager::class.java)!!
@@ -26,15 +25,11 @@ class JpaUserDetailsManager(
             val authorities: List<String> =
                 authorities.findAllByUsername(username)
                     .map { it.authority }
-            val roles: List<String> =
-                roles.findAllByUsername(username)
-                    .map { it.role }
 
             SecurityUser(
                 username = user.username,
                 password = user.password,
                 authorities = authorities,
-                roles = roles
             )
         } ?: throw UsernameNotFoundException("$username is not found!")
     }
@@ -54,15 +49,6 @@ class JpaUserDetailsManager(
                 Authorities(
                     username = securityUser.username,
                     authority = it.toString()
-                )
-            )
-        }
-
-        securityUser.roles.forEach {
-            roles.save(
-                Roles(
-                    username = securityUser.username,
-                    role = it
                 )
             )
         }

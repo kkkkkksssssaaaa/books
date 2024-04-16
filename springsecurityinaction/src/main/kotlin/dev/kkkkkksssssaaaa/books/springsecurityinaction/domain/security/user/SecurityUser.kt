@@ -8,7 +8,6 @@ class SecurityUser(
     private val username: String,
     private val password: String,
     private val authorities: List<String>,
-    val roles: List<String> = listOf("MANAGER")
 ): UserDetails {
     override fun getAuthorities(): MutableCollection<out GrantedAuthority> {
         return this.authorities.map { authority ->

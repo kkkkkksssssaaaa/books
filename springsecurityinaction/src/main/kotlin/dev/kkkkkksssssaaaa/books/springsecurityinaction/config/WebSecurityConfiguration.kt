@@ -26,6 +26,7 @@ class WebSecurityConfiguration(
         }.authorizeHttpRequests {
             it.requestMatchers("/hello").hasRole("ADMIN")
                 .requestMatchers("/ciao").hasRole("MANAGER")
+                .anyRequest().authenticated()
         }.authenticationProvider(authenticationProvider)
         .build()
     }

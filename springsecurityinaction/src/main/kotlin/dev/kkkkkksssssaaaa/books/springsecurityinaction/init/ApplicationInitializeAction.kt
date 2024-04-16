@@ -4,7 +4,10 @@ import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.Pr
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.ProductCurrency
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.product.entity.ProductRepository
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PasswordEncoderConstants
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.*
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.User
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.UserRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.crypto.password.PasswordEncoder
@@ -13,7 +16,6 @@ import org.springframework.security.crypto.password.PasswordEncoder
 class ApplicationInitializeAction(
     private val userRepository: UserRepository,
     private val authoritiesRepository: AuthoritiesRepository,
-    private val rolesRepository: RolesRepository,
     private val productRepository: ProductRepository,
     private val bcryptPasswordEncoder: PasswordEncoder
 ) {
@@ -22,8 +24,8 @@ class ApplicationInitializeAction(
         private const val PASSWORD: String = "kkkkkksssssaaaa"
         private const val WRITE: String = "write"
         private const val READ: String = "read"
-        private const val ADMIN: String = "ADMIN"
-        private const val MANAGER: String = "MANAGER"
+        private const val ADMIN: String = "ROLE_ADMIN"
+        private const val MANAGER: String = "ROLE_MANAGER"
     }
 
     @Bean
@@ -72,11 +74,11 @@ class ApplicationInitializeAction(
             )
         )
 
-        rolesRepository.save(
-            Roles(
-                id = 1,
+        authoritiesRepository.save(
+            Authorities(
+                id = 3,
                 username = USERNAME,
-                role = ADMIN
+                authority = ADMIN
             )
         )
     }
@@ -96,7 +98,7 @@ class ApplicationInitializeAction(
 
         authoritiesRepository.save(
             Authorities(
-                id = 3,
+                id = 4,
                 username = "${USERNAME}2",
                 authority = WRITE
             )
@@ -104,17 +106,17 @@ class ApplicationInitializeAction(
 
         authoritiesRepository.save(
             Authorities(
-                id = 4,
+                id = 5,
                 username = "${USERNAME}2",
                 authority = READ
             )
         )
 
-        rolesRepository.save(
-            Roles(
-                id = 2,
+        authoritiesRepository.save(
+            Authorities(
+                id = 6,
                 username = "${USERNAME}2",
-                role = MANAGER
+                authority = MANAGER
             )
         )
     }
