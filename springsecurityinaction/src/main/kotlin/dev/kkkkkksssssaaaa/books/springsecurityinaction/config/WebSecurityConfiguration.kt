@@ -24,8 +24,8 @@ class WebSecurityConfiguration(
         }.httpBasic {
             it.authenticationEntryPoint(CustomEntryPoint())
         }.authorizeHttpRequests {
-            it.anyRequest()
-                .authenticated()
+            it.requestMatchers("/hello").hasRole("ADMIN")
+                .requestMatchers("/ciao").hasRole("MANAGER")
         }.authenticationProvider(authenticationProvider)
         .build()
     }

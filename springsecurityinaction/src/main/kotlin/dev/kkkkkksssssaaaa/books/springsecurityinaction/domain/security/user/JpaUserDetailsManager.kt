@@ -1,9 +1,6 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.user
 
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.Authorities
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.AuthoritiesRepository
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.User
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.UserRepository
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity.*
 import org.slf4j.LoggerFactory
 import org.springframework.security.core.userdetails.UserDetails
 import org.springframework.security.core.userdetails.UsernameNotFoundException
@@ -14,7 +11,8 @@ import org.springframework.transaction.annotation.Transactional
 @Service
 class JpaUserDetailsManager(
     private val users: UserRepository,
-    private val authorities: AuthoritiesRepository
+    private val authorities: AuthoritiesRepository,
+    private val roles: RolesRepository
 ): UserDetailsManager {
     companion object {
         private val log = LoggerFactory.getLogger(JpaUserDetailsManager::class.java)!!
@@ -24,20 +22,26 @@ class JpaUserDetailsManager(
     override fun loadUserByUsername(username: String): UserDetails {
         log.info("find user details, username=$username")
 
-        return users.findByUsername(username)?.let {
+        return users.findByUsername(username)?.let { user ->
             val authorities: List<String> =
                 authorities.findAllByUsername(username)
                     .map { it.authority }
+            val roles: List<String> =
+                roles.findAllByUsername(username)
+                    .map { it.role }
 
             SecurityUser(
-                username = it.username,
-                password = it.password,
-                authorities = authorities
+                username = user.username,
+                password = user.password,
+                authorities = authorities,
+                roles = roles
             )
         } ?: throw UsernameNotFoundException("$username is not found!")
     }
 
-    override fun createUser(securityUser: UserDetails) {
+    override fun createUser(userDetails: UserDetails) {
+        val securityUser = userDetails as SecurityUser
+
         users.save(
             User(
                 username = securityUser.username,
@@ -50,6 +54,15 @@ class JpaUserDetailsManager(
                 Authorities(
                     username = securityUser.username,
                     authority = it.toString()
+                )
+            )
+        }
+
+        securityUser.roles.forEach {
+            roles.save(
+                Roles(
+                    username = securityUser.username,
+                    role = it
                 )
             )
         }
