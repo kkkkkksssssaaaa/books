@@ -3,6 +3,11 @@ GET https://localhost:8080/hello
 Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 
 ###
+POST https://localhost:8080/hello
+Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
+X-Csrf-Token: S7QDrJWf-oIT8voEI5M6IOcRKtq6xcgC5h_UaWkGMo1exa69e9cznKb7y-E-wcwzRb4OQdB3B7iO96sv1S6wUAhkU7tmpJuO
+
+###
 GET https://localhost:8080/bye
 Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 

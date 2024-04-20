@@ -4,6 +4,7 @@ import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.service.Curr
 import org.slf4j.LoggerFactory
 import org.springframework.scheduling.annotation.Async
 import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
@@ -16,6 +17,11 @@ class HelloController(
 
     @GetMapping("/hello")
     fun hello(): String {
+        return "${currentUser.name()}, Hello!"
+    }
+
+    @PostMapping("/hello")
+    fun postHello(): String {
         return "${currentUser.name()}, Hello!"
     }
 

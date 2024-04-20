@@ -6,13 +6,9 @@ import jakarta.servlet.ServletRequest
 import jakarta.servlet.ServletResponse
 import jakarta.servlet.http.HttpServletRequest
 import jakarta.servlet.http.HttpServletResponse
-import org.springframework.beans.factory.annotation.Value
-import org.springframework.stereotype.Component
 
-@Component
 class StaticKeyAuthenticationFilter(
-    @Value("\${authorization.key}")
-    private val authorizationKey: String
+    private val authorizationKey: String = ""
 ): Filter {
     override fun doFilter(
         req: ServletRequest,
