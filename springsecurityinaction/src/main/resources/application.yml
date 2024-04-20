@@ -14,10 +14,12 @@ spring:
   mvc:
     static-path-pattern: classpath:/static/**
 
-
 server:
   ssl:
     key-store: classpath:certificate.p12
     key-store-type: PKCS12
     key-store-password: 1234
   port: 8080
+
+authorization:
+  key: SD9cICjl1e

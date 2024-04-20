@@ -1,7 +1,7 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.config
 
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter.AuthenticationLoggingFilter
-import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter.RequestValidationFilter
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter.StaticKeyAuthenticationFilter
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.handler.CustomEntryPoint
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
@@ -16,7 +16,8 @@ import org.springframework.security.web.authentication.www.BasicAuthenticationFi
 class WebSecurityConfiguration(
     private val authenticationProvider: AuthenticationProvider,
     private val successHandler: AuthenticationSuccessHandler,
-    private val failureHandler: AuthenticationFailureHandler
+    private val failureHandler: AuthenticationFailureHandler,
+    private val staticKeyAuthenticationFilter: StaticKeyAuthenticationFilter
 ) {
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
@@ -29,9 +30,9 @@ class WebSecurityConfiguration(
         }.authorizeHttpRequests {
             it.requestMatchers("/hello").hasRole("ADMIN")
                 .requestMatchers("/ciao").hasRole("MANAGER")
-                .anyRequest().authenticated()
+                .anyRequest().permitAll()
         }.addFilterBefore(
-            RequestValidationFilter(),
+            staticKeyAuthenticationFilter,
             BasicAuthenticationFilter::class.java
         ).addFilterAfter(
             AuthenticationLoggingFilter(),
