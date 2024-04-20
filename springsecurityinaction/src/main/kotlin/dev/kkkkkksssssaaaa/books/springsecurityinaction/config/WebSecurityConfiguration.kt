@@ -1,5 +1,6 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.config
 
+import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter.AuthenticationLoggingFilter
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter.RequestValidationFilter
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.handler.CustomEntryPoint
 import org.springframework.context.annotation.Bean
@@ -31,6 +32,9 @@ class WebSecurityConfiguration(
                 .anyRequest().authenticated()
         }.addFilterBefore(
             RequestValidationFilter(),
+            BasicAuthenticationFilter::class.java
+        ).addFilterAfter(
+            AuthenticationLoggingFilter(),
             BasicAuthenticationFilter::class.java
         ).authenticationProvider(authenticationProvider)
         .build()
