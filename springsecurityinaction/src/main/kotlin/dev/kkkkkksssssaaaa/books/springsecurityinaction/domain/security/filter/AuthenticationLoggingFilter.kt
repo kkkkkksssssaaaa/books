@@ -1,22 +1,20 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.filter
 
-import jakarta.servlet.Filter
 import jakarta.servlet.FilterChain
-import jakarta.servlet.ServletRequest
-import jakarta.servlet.ServletResponse
 import jakarta.servlet.http.HttpServletRequest
+import jakarta.servlet.http.HttpServletResponse
 import org.slf4j.LoggerFactory
+import org.springframework.web.filter.OncePerRequestFilter
 
-class AuthenticationLoggingFilter: Filter {
+class AuthenticationLoggingFilter: OncePerRequestFilter() {
     private val log = LoggerFactory.getLogger(AuthenticationLoggingFilter::class.java)!!
 
-    override fun doFilter(
-        req: ServletRequest,
-        res: ServletResponse,
+    override fun doFilterInternal(
+        req: HttpServletRequest,
+        res: HttpServletResponse,
         filterChain: FilterChain
     ) {
-        val servletRequest: HttpServletRequest = req as HttpServletRequest
-        val requestId = servletRequest.requestId
+        val requestId = req.requestId
 
         log.info("Successfully authenticated request with id {$requestId}")
 
