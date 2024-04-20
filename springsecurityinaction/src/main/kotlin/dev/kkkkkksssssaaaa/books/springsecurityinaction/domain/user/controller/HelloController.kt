@@ -36,6 +36,11 @@ class HelloController(
         return "Ciao, ${currentUser.ciao()}!"
     }
 
+    @PostMapping("/ciao")
+    fun postCiao(): String {
+        return "Ciao, ${currentUser.ciao()}!"
+    }
+
     @GetMapping("/hola")
     fun hola(): String {
         return "Hola, ${currentUser.hola()}!"

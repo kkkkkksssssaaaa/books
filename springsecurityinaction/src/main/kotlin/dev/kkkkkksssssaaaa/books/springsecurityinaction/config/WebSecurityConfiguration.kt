@@ -29,6 +29,8 @@ class WebSecurityConfiguration(
             it.authenticationEntryPoint(CustomEntryPoint())
         }.authorizeHttpRequests {
             it.anyRequest().permitAll()
+        }.csrf {
+            it.ignoringRequestMatchers("/ciao")
         }.addFilterAfter(
             CsrfTokenLogger(),
             CsrfFilter::class.java

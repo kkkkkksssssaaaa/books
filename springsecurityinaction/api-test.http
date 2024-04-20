@@ -16,6 +16,10 @@ GET https://localhost:8080/ciao
 Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 
 ###
+POST https://localhost:8080/ciao
+Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
+
+###
 GET https://localhost:8080/hola
 Authorization: SD9cICjl1e
 
