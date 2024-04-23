@@ -7,7 +7,7 @@ X-IDENTIFIER: 12345
 POST https://localhost:8080/hello
 Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 X-IDENTIFIER: 12345
-X-Csrf-Token: S92oB4FNS5baDXUAY3V_A0tk6nBUwCDgPYjK2OzG0pl0zoBOf-WYNOQsKaf3aEYyWlhLZXlSx0hj8EXNDuzz6Irw5atE-eJ-
+X-Csrf-Token: JL6193S1yLMPE2STgeEfvlvLOYHWEWPQqD1uwn4Z714-jz6NHIyHlheF8YEicgemtcwrjm_7FLnlcgL9kAtWoE142D8GuVq0
 
 ###
 GET https://localhost:8080/bye

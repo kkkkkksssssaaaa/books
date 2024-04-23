@@ -31,19 +31,17 @@ class CsrfTokenRepositoryImpl(
         response: HttpServletResponse
     ) {
         val identifier: String = request.getHeader("X-IDENTIFIER")
+        val findCsrfToken = jpaRepository.findTokenByIdentifier(identifier)
 
-        jpaRepository.findTokenByIdentifier(identifier)?.let {
-            println("csrf.saveToken $identifier is exist.")
-            it.updateToken(csrfToken.token)
-        } ?: {
-            println("csrf.saveToken $identifier is not exist.")
-
+        if (findCsrfToken == null) {
             val entity = IssuedCsrfToken(
                 identifier = identifier,
                 token = csrfToken.token
             )
 
             jpaRepository.save(entity)
+        } else {
+            findCsrfToken.updateToken(csrfToken.token)
         }
     }
 
