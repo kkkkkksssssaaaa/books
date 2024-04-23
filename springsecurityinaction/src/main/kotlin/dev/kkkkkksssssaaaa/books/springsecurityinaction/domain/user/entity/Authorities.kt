@@ -1,8 +1,6 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity
 
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import org.springframework.data.domain.Persistable
 
 @Entity(name = "authorities")
@@ -12,6 +10,7 @@ class Authorities(
     id: Long? = null,
 ): Persistable<Long> {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private var id: Long? = id
 
     @Column(name = "`username`")

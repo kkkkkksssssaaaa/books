@@ -12,12 +12,14 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter
 import org.springframework.security.web.csrf.CsrfFilter
+import org.springframework.security.web.csrf.CsrfTokenRepository
 
 @Configuration
 class WebSecurityConfiguration(
     private val authenticationProvider: AuthenticationProvider,
     private val successHandler: AuthenticationSuccessHandler,
     private val failureHandler: AuthenticationFailureHandler,
+    private val csrfTokenRepository: CsrfTokenRepository
 ) {
     @Bean
     fun filterChain(http: HttpSecurity): SecurityFilterChain {
@@ -30,6 +32,7 @@ class WebSecurityConfiguration(
         }.authorizeHttpRequests {
             it.anyRequest().permitAll()
         }.csrf {
+            it.csrfTokenRepository(csrfTokenRepository)
             it.ignoringRequestMatchers("/ciao")
         }.addFilterAfter(
             CsrfTokenLogger(),

@@ -1,9 +1,7 @@
 package dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.user.entity
 
 import dev.kkkkkksssssaaaa.books.springsecurityinaction.domain.security.password.PasswordEncoderConstants
-import jakarta.persistence.Column
-import jakarta.persistence.Entity
-import jakarta.persistence.Id
+import jakarta.persistence.*
 import org.springframework.data.domain.Persistable
 
 @Entity(name = "`user`")
@@ -14,6 +12,7 @@ class User(
     algorithm: String = PasswordEncoderConstants.BCRYPT.key
 ): Persistable<Long> {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private var id: Long? = id
 
     @Column(name = "`username`")

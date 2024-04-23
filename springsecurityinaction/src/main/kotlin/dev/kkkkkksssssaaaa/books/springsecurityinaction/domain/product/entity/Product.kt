@@ -11,6 +11,7 @@ class Product(
     id: Long? = null
 ): Persistable<Long> {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private var id: Long? = id
 
     @Column(name = "`name`")
