@@ -6,11 +6,9 @@ import jakarta.servlet.http.HttpServletResponse
 import org.springframework.security.web.csrf.CsrfToken
 import org.springframework.security.web.csrf.CsrfTokenRepository
 import org.springframework.security.web.csrf.DefaultCsrfToken
-import org.springframework.stereotype.Repository
 import org.springframework.transaction.annotation.Transactional
 import java.util.*
 
-@Repository
 class CsrfTokenRepositoryImpl(
     private val jpaRepository: CsrfTokenJpaRepository
 ) : CsrfTokenRepository {
