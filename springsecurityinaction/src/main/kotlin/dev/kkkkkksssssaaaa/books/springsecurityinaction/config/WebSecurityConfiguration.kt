@@ -12,6 +12,7 @@ import org.springframework.security.web.authentication.AuthenticationFailureHand
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter
 import org.springframework.security.web.csrf.CsrfFilter
+import org.springframework.web.cors.CorsConfiguration
 
 @Configuration
 class WebSecurityConfiguration(
@@ -25,6 +26,24 @@ class WebSecurityConfiguration(
             it.permitAll()
                 .successHandler(successHandler)
                 .failureHandler(failureHandler)
+        }.cors {
+            it.configurationSource {
+                val corsConfig = CorsConfiguration()
+
+                corsConfig.allowedOriginPatterns = listOf(
+                    "example.com",
+                    "example.org"
+                )
+
+                corsConfig.allowedMethods = listOf(
+                    "GET",
+                    "POST",
+                    "PUT",
+                    "DELETE"
+                )
+
+                corsConfig
+            }
         }.httpBasic {
             it.authenticationEntryPoint(CustomEntryPoint())
         }.authorizeHttpRequests {
