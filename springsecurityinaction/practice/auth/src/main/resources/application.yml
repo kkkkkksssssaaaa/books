@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.h2.Driver
-    url: jdbc:h2:./database/springsecurityinaction;AUTO_SERVER=true
+    url: jdbc:h2:./database/spring-security-in-action/auth;AUTO_SERVER=true
     username: sa
     password:
   jpa:
