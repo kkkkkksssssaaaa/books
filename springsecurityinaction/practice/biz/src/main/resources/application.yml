@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:./database/spring-security-in-action/biz;AUTO_SERVER=true
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  mvc:
+    static-path-pattern: classpath:/static/**
+
+server:
+  ssl:
+    key-store: classpath:certificate.p12
+    key-store-type: PKCS12
+    key-store-password: 1234
+  port: 8082
+
+authorization:
+  key: SD9cICjl1e
