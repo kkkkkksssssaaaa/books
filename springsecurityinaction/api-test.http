@@ -24,3 +24,29 @@ Authorization: Basic kkkkkksssssaaaa kkkkkksssssaaaa
 GET https://localhost:8080/hola
 Authorization: SD9cICjl1e
 
+###
+POST https://localhost:8081/user
+Content-Type: application/json
+
+{
+  "username": "kkkkkksssssaaaa",
+  "password": "kkkkkksssssaaaa"
+}
+
+###
+POST https://localhost:8081/user/auth
+Content-Type: application/json
+
+{
+  "username": "kkkkkksssssaaaa",
+  "password": "kkkkkksssssaaaa"
+}
+
+###
+POST https://localhost:8081/otp/check
+Content-Type: application/json
+
+{
+  "username": "kkkkkksssssaaaa",
+  "code": "12151"
+}
