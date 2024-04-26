@@ -21,5 +21,11 @@ server:
     key-store-password: 1234
   port: 8082
 
-authorization:
-  key: SD9cICjl1e
+auth:
+  server:
+    base:
+      url: http://localhost:8080
+
+jwt:
+  signing:
+    key: "1234"

@@ -9,7 +9,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.4"
 }
 
-group = "dev.kkkkkksssssaaaa.books.springsecurityinaction"
+group = "dev.kkkkkksssssaaaa.books.springsecurityinaction.biz"
 version = "0.0.1-SNAPSHOT"
 
 java {
@@ -27,6 +27,7 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 	implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
+	implementation("com.auth0:java-jwt:4.4.0")
 	runtimeOnly("com.h2database:h2:2.1.214")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }

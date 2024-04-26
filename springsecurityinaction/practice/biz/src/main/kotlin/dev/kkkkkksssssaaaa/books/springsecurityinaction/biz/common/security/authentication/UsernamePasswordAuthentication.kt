@@ -11,7 +11,7 @@ class UsernamePasswordAuthentication: UsernamePasswordAuthenticationToken {
 
     constructor(
         principal: Any,
-        credentials: Any,
+        credentials: Any?,
         authorities: MutableCollection<out GrantedAuthority>
     ) : super(principal, credentials, authorities)
 }
