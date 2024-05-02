@@ -25,7 +25,7 @@ GET https://localhost:8080/hola
 Authorization: SD9cICjl1e
 
 ###
-POST https://localhost:8081/user
+POST http://localhost:8081/user
 Content-Type: application/json
 
 {
@@ -34,7 +34,7 @@ Content-Type: application/json
 }
 
 ###
-POST https://localhost:8081/user/auth
+POST http://localhost:8081/user/auth
 Content-Type: application/json
 
 {
@@ -43,10 +43,18 @@ Content-Type: application/json
 }
 
 ###
-POST https://localhost:8081/otp/check
+POST http://localhost:8081/otp/check
 Content-Type: application/json
 
 {
   "username": "kkkkkksssssaaaa",
-  "code": "12151"
+  "code": "3186"
 }
+
+###
+POST http://localhost:8082/login
+username: kkkkkksssssaaaa
+password: kkkkkksssssaaaa
+
+###
+POST http://localhost:8082/test

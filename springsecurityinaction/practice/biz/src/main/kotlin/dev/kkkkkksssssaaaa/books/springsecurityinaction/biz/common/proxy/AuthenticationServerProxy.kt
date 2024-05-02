@@ -16,10 +16,10 @@ class AuthenticationServerProxy(
     fun sendAuth(
         username: String,
         password: String
-    ) {
+    ): String {
         val url = "${authServerUrl}/user/auth"
 
-        restClient.post()
+        return restClient.post()
             .uri(url)
             .body {
                 mapOf(
@@ -28,6 +28,7 @@ class AuthenticationServerProxy(
                 )
             }
             .retrieve()
+            .body(String::class.java)!!
     }
 
     fun sendOtp(
