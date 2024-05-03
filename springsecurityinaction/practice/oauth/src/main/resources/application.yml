@@ -13,14 +13,29 @@ spring:
         show_sql: true
   mvc:
     static-path-pattern: classpath:/static/**
+# use spring auto config to registered github app
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          github:
+#            client-id: Ov23liKuE6UNVjWP6fjb
+#            client-secret: 0a057559bc6f6e07d2d756a51ac94d5f9126921e
 
 server:
   port: 8080
 
 auth:
-  server:
-    base:
-      url: http://localhost:8081
+  client:
+    github:
+      id: github
+      name: Github
+      keys:
+        id: #
+        secret: #
+
+
+
 
 jwt:
   signing:
