@@ -21,9 +21,15 @@ spring:
     allow-bean-definition-overriding: true
 
 custom:
+  default-url: http://localhost:${server.port}
   security:
     client:
-      id: "14502624-340c-48ef-adfe-531b997ec670"
+      id: 14502624-340c-48ef-adfe-531b997ec670
+      client-id: grant-client
+      client-secret: secret
+      redirect-uris:
+        - ${custom.default-url}/login/oauth2/code/login-client
+        - ${custom.default-url}/authorized
 
 server:
   port: 8083
