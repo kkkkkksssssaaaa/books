@@ -17,28 +17,13 @@ spring:
     user:
       name: user
       password: password
-    oauth2:
-      authorizationserver:
-        client:
-          oidc-client:
-            registration:
-              client-id: "oidc-client"
-              client-secret: "{noop}secret"
-              client-authentication-methods:
-                - "client_secret_basic"
-              authorization-grant-types:
-                - "authorization_code"
-                - "refresh_token"
-              redirect-uris:
-                - "http://localhost:8080/login/oauth2/code/oidc-client"
-              post-logout-redirect-uris:
-                - "http://localhost:8080/"
-              scopes:
-                - "openid"
-                - "profile"
-            require-authorization-consent: true
   main:
     allow-bean-definition-overriding: true
+
+custom:
+  security:
+    client:
+      id: "14502624-340c-48ef-adfe-531b997ec670"
 
 server:
   port: 8083
