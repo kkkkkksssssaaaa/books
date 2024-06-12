@@ -2,34 +2,66 @@ package dev.kkkkkksssssaaaa.books.springsecurityinaction.grant.common.config
 
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
-import org.springframework.core.Ordered
-import org.springframework.core.annotation.Order
-import org.springframework.security.config.Customizer
 import org.springframework.security.config.annotation.web.builders.HttpSecurity
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity
-import org.springframework.security.config.annotation.web.configurers.ExceptionHandlingConfigurer
-import org.springframework.security.config.annotation.web.configurers.oauth2.server.resource.OAuth2ResourceServerConfigurer
-import org.springframework.security.oauth2.server.authorization.config.annotation.web.configuration.OAuth2AuthorizationServerConfiguration
-import org.springframework.security.oauth2.server.authorization.config.annotation.web.configurers.OAuth2AuthorizationServerConfigurer
+import org.springframework.security.oauth2.client.*
+import org.springframework.security.oauth2.client.endpoint.OAuth2AccessTokenResponseClient
+import org.springframework.security.oauth2.client.endpoint.OAuth2AuthorizationCodeGrantRequest
+import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository
+import org.springframework.security.oauth2.client.web.*
+import org.springframework.security.oauth2.core.endpoint.OAuth2AuthorizationRequest
 import org.springframework.security.web.SecurityFilterChain
-import org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint
-
 
 @Configuration
 @EnableWebSecurity
-class AuthServerConfiguration {
+class AuthServerConfiguration(
+    private val clientRegistrationRepository: ClientRegistrationRepository,
+    private val authorizedClientRepository: OAuth2AuthorizedClientRepository,
+    private val authorizedClientService: OAuth2AuthorizedClientService,
+    private val authorizationRequestRepository: AuthorizationRequestRepository<OAuth2AuthorizationRequest>,
+    private val accessTokenResponseClient: OAuth2AccessTokenResponseClient<OAuth2AuthorizationCodeGrantRequest>
+) {
     @Bean
-    @Order(Ordered.HIGHEST_PRECEDENCE)
-    fun authorizationServerSecurityFilterChain(http: HttpSecurity): SecurityFilterChain {
-        // @formatter:off
-        OAuth2AuthorizationServerConfiguration.applyDefaultSecurity(http)
-        http.getConfigurer(OAuth2AuthorizationServerConfigurer::class.java).oidc(Customizer.withDefaults()) // Enable OpenID Connect 1.0
-        http
-            .exceptionHandling{exceptions:ExceptionHandlingConfigurer<HttpSecurity?> -> exceptions
-                .authenticationEntryPoint(LoginUrlAuthenticationEntryPoint("/login"))}
-            .oauth2ResourceServer{resourceServer:OAuth2ResourceServerConfigurer<HttpSecurity?> -> resourceServer.jwt(Customizer.withDefaults())}
-        // @formatter:on
+    fun filterChain(http: HttpSecurity): SecurityFilterChain {
+        http.oauth2Client { client ->
+            client.clientRegistrationRepository(clientRegistrationRepository)
+            client.authorizedClientRepository(authorizedClientRepository)
+            client.authorizedClientService(authorizedClientService)
+            client.authorizationCodeGrant { grant ->
+                    grant.authorizationRequestRepository(authorizationRequestRepository)
+                    grant.authorizationRequestResolver(authorizationRequestResolver())
+                    grant.accessTokenResponseClient(accessTokenResponseClient)
+                }
+            }
 
         return http.build()
+    }
+
+    @Bean
+    fun authorizedClientManager(
+        clientRegistrationRepository: ClientRegistrationRepository,
+        authorizedClientRepository: OAuth2AuthorizedClientRepository
+    ): OAuth2AuthorizedClientManager {
+        val authorizedClientProvider: OAuth2AuthorizedClientProvider =
+            OAuth2AuthorizedClientProviderBuilder.builder()
+                .authorizationCode()
+                .refreshToken()
+                .clientCredentials()
+                .password()
+                .build()
+        val authorizedClientManager = DefaultOAuth2AuthorizedClientManager(
+            clientRegistrationRepository,
+            authorizedClientRepository
+        )
+
+        authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider)
+
+        return authorizedClientManager
+    }
+
+    private fun authorizationRequestResolver(): OAuth2AuthorizationRequestResolver {
+        return DefaultOAuth2AuthorizationRequestResolver(
+            clientRegistrationRepository, "/login/{clientId}"
+        )
     }
 }

@@ -7,5 +7,5 @@ data class ClientProperties(
     val id: String,
     val clientId: String,
     val clientSecret: String,
-    val redirectUris: List<String>
+    val redirectUris: List<String>,
 )
