@@ -1,28 +1,29 @@
 import createStatementData from "./createStatementData";
+import { Invoice, Play, Statement } from "./objects";
 
-function statement(invoice, plays) {
+function statement(invoice: Invoice, plays: Map<string, Play>) {
   return renderPlainText(createStatementData(invoice, plays));
 }
 
-function htmlStatement(invoice, plays) {
+function htmlStatement(invoice: Invoice, plays: Map<string, Play>) {
   return renderHtml(createStatementData(invoice, plays));
 }
 
-function renderPlainText(data, plays) {
+function renderPlainText(data: Statement) {
   let result = `청구 내역 (고객명: ${ data.customer })\n`;
 
-  for (let perf of data.performances) {
+  for (let perf of data.performances!!) {
     // 청구 내역을 출력한다
-    result += ` ${ perf.play.name }: ${ usd(perf.amount) } (${ perf.audience }석\n)`
+    result += ` ${ perf.play?.name }: ${ usd(perf.amount || 0) } (${ perf.audience }석\n)`
   }
 
-  result += `총액: ${ usd(data.totalAmount) }\n`
+  result += `총액: ${ usd(data.totalAmount || 0) }\n`
   result += `적립 포인트: ${ data.totalVolumeCredits }점\n`
   
   return result;
 }
 
-function renderHtml(data) {
+function renderHtml(data: Statement) {
   let result = `
   <h1>청구 내역 (고객명: ${ data.customer })</h1>
   <table>
@@ -33,17 +34,17 @@ function renderHtml(data) {
     </tr>
   `;
 
-  for (let perf of data.performances) {
+  for (let perf of data.performances!!) {
     result += `
     <tr>
       <td>
-        ${ perf.play.name }
+        ${ perf.play?.name }
       </td>
       <td>
         ${ perf.audience }석
       </td>
       <td>
-        ${ usd(perf.amount) }
+        ${ usd(perf.amount || 0) }
       </td>
     </tr>
     `;
@@ -52,12 +53,12 @@ function renderHtml(data) {
   result += `</table>`;
 
   result += `
-  <p>총액: <em>${usd(data.totalAmount)}</em></p>
+  <p>총액: <em>${usd(data.totalAmount || 0)}</em></p>
   <p>적립 포인트: <em>${data.totalVolumeCredits}</em>점</p>
   `
 }
 
-function usd(aNumber) {
+function usd(aNumber: number): string {
   return new Intl.NumberFormat(
     "en-US",
     {
