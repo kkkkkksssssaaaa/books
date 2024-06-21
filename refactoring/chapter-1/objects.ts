@@ -32,6 +32,7 @@ export class EnrichPerformance {
   amount?: number;
   volumeCredits?: number;
   playId?: string;
+  name?: string;
   audience?: string;
 
   constructor() {

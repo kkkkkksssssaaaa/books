@@ -66,7 +66,7 @@ function createPerformanceCalculator(aPerformance: Performance, aPlay: Play) {
   }
 }
 
-export default function createStatementData(invoice: Invoice, plays: Plays) {
+export default function createStatementData(invoice: Invoice, plays: Map<string, Play>) {
   let result: Statement = new Statement();
 
   result.customer = invoice.customer;
@@ -82,6 +82,7 @@ export default function createStatementData(invoice: Invoice, plays: Plays) {
     let result: EnrichPerformance = new EnrichPerformance()
 
     result.playId = aPerformance.playId;
+
     result.play = calculator.play;
     result.amount = calculator.amount;
     result.volumeCredits = calculator.volumeCredits;
@@ -89,8 +90,8 @@ export default function createStatementData(invoice: Invoice, plays: Plays) {
     return result;
   }
 
-  function playFor(aPerformance: Performance) {
-    return plays[aPerformance.playId];
+  function playFor(aPerformance: Performance): Play {
+    return plays.get(aPerformance.playId)!!;
   }
 
   function totalAmount(data: Statement) {
