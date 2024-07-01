@@ -1,11 +1,11 @@
-class Province {
+export class Province {
   private _name: string;
-  private _producers;
+  private _producers: Producer[];
   private _demand: number;
   private _price: number;
   private _totalProduction: number;
 
-  constroctor(doc: ProvinceData) {
+  constructor(doc: ProvinceData) {
     this._name = doc.name;
     this._producers = [];
     this._totalProduction = 0;
@@ -14,7 +14,7 @@ class Province {
     
     doc.producers.forEach(d => {
       this.addProducer(new Producer(this, d));
-    })
+    });
   }
 
   get name() {
@@ -122,8 +122,8 @@ class Producer {
   set production(arg: number) {
     const newProduction = Number.isNaN(arg) ? 0 : arg;
 
-    this._province.totalProduction += newProduction - this._production;
-    this.production = newProduction;
+    this._province.totalProduction += (newProduction - this._production);
+    this._production = newProduction;
   }
 }
 
@@ -140,7 +140,7 @@ export interface ProducerData {
   production: number;
 }
 
-export const sampleProvinceData = () => {
+export const sampleProvinceData = (): ProvinceData => {
   return {
     name: "Asia",
     producers: [
