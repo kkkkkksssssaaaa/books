@@ -61,7 +61,7 @@ class AuthServerConfiguration(
 
     private fun authorizationRequestResolver(): OAuth2AuthorizationRequestResolver {
         return DefaultOAuth2AuthorizationRequestResolver(
-            clientRegistrationRepository, "/login/{clientId}"
+            clientRegistrationRepository, "/auth/login/{clientId}"
         )
     }
 }

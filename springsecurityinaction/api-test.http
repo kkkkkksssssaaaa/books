@@ -58,3 +58,16 @@ password: kkkkkksssssaaaa
 
 ###
 POST http://localhost:8082/test
+
+###
+GET http://localhost:8083/login/oauth2/code/grant-client
+
+###
+POST http://localhost:8083/auth/login/grant-client
+Authorization: Basic kkkkkksssssaaaa 1234
+
+###
+POST http://localhost:8083/auth/authorization
+
+###
+POST http://localhost:9093/auth/token
