@@ -1,11 +1,11 @@
 //package dev.kkkkkksssssaaaa.books.tdd.money.objects
 //
-//class Dollar(
+//class Franc(
 //    amount: Long,
-//    currency: String = "USD"
+//    currency: String = "CHF"
 //): Money(amount, currency) {
 //    override fun times(multiplier: Int): Money {
-//        return Dollar(
+//        return Franc(
 //            amount = this.amount * multiplier,
 //            currency = currency
 //        )
