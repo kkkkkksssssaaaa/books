@@ -3,7 +3,7 @@ package dev.kkkkkksssssaaaa.books.tdd.money.objects
 class Money(
     val amount: Long,
     val currency: String
-) {
+): Expression {
     companion object {
         fun dollar(amount: Long) = Money(amount, currency = "USD")
         fun franc(amount: Long) = Money(amount, currency = "CHF")
@@ -14,6 +14,17 @@ class Money(
             amount = this.amount * multiplier,
             currency = currency
         )
+    }
+
+    operator fun plus(addend: Money): Expression {
+        return Sum(
+            this,
+            addend
+        )
+    }
+
+    override fun reduce(to: String): Money {
+        return this
     }
 
     override fun hashCode(): Int {

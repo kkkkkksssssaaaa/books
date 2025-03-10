@@ -1,6 +1,8 @@
 package dev.kkkkkksssssaaaa.books.tdd.money
 
+import dev.kkkkkksssssaaaa.books.tdd.money.objects.Bank
 import dev.kkkkkksssssaaaa.books.tdd.money.objects.Money
+import dev.kkkkkksssssaaaa.books.tdd.money.objects.Sum
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Nested
 import org.junit.jupiter.api.Test
@@ -60,5 +62,27 @@ class MoneyTest {
     @Test
     fun doTestEquality() {
         assertFalse(Money.franc(1).equals(Money.dollar(1)))
+    }
+
+    @Test
+    fun doTestPlus() {
+        assertEquals(
+            Money.dollar(2),
+            Money.dollar(1) + Money.dollar(1)
+        )
+
+        val bank = Bank()
+        val sum = Sum(Money.dollar(3), Money.dollar(4))
+
+        val reduced: Money = bank.reduced(sum, "USD")
+        assertEquals(Money.dollar(7), reduced)
+    }
+
+    @Test
+    fun doTestPlus2() {
+        val bank = Bank()
+        val result = bank.reduced(Money.dollar(1), "USD")
+
+        assertEquals(Money.dollar(1), result)
     }
 }
