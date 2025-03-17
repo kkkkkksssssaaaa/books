@@ -1,6 +1,7 @@
 package dev.kkkkkksssssaaaa.books.tdd.money
 
 import dev.kkkkkksssssaaaa.books.tdd.money.objects.Bank
+import dev.kkkkkksssssaaaa.books.tdd.money.objects.Expression
 import dev.kkkkkksssssaaaa.books.tdd.money.objects.Money
 import dev.kkkkkksssssaaaa.books.tdd.money.objects.Sum
 import org.junit.jupiter.api.Assertions.*
@@ -12,8 +13,8 @@ class MoneyTest {
     inner class DollarTest {
         @Test
         fun doTestMultiplication() {
-            val five: Money = Money.dollar(5)
-            var product: Money = five.times(2)
+            val five = Money.dollar(5)
+            var product = five.times(2)
 
             assertEquals(Money.dollar(10), product)
 
@@ -32,8 +33,8 @@ class MoneyTest {
     inner class FrancTest {
         @Test
         fun doTestMultiplication() {
-            val five: Money = Money.franc(5)
-            var product: Money = five.times(2)
+            val five = Money.franc(5)
+            var product = five.times(2)
 
             assertEquals(Money.franc(10), product)
 
@@ -56,6 +57,36 @@ class MoneyTest {
             assertEquals("CHF", Money.franc(1).currency)
             assertTrue(Money(10, "USD") == Money(10, "USD"))
             assertFalse(Money(10, "USD") == Money(10, "CHF"))
+        }
+    }
+
+    @Nested
+    inner class ReduceTest {
+        @Test
+        fun doTest() {
+            val bank = Bank()
+            bank.addRate("CHF", "USD", 2)
+
+            val result = bank.reduced(Money.franc(2), "USD")
+            assertEquals(Money.dollar(1), result)
+        }
+    }
+
+    @Nested
+    inner class MixedAdditionTest {
+        @Test
+        fun doTest() {
+            val fiveBucks: Expression = Money.dollar(5)
+            val tenFrancs: Expression = Money.franc(10)
+
+            val bank = Bank()
+            bank.addRate("CHF", "USD", 2)
+
+            val result = bank.reduced(
+                fiveBucks.plus(tenFrancs), "USD"
+            )
+
+            assertEquals(Money.dollar(10), result)
         }
     }
 

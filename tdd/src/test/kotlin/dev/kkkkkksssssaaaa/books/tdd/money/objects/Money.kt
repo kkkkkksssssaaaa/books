@@ -9,22 +9,24 @@ class Money(
         fun franc(amount: Long) = Money(amount, currency = "CHF")
     }
 
-    fun times(multiplier: Int): Money {
+    fun times(multiplier: Int): Expression {
         return Money(
             amount = this.amount * multiplier,
             currency = currency
         )
     }
 
-    operator fun plus(addend: Money): Expression {
+    override operator fun plus(addend: Expression): Expression {
         return Sum(
             this,
             addend
         )
     }
 
-    override fun reduce(to: String): Money {
-        return this
+    override fun reduce(bank: Bank, to: String): Money {
+        val rate = bank.rate(currency, to)
+
+        return Money(amount / rate, to)
     }
 
     override fun hashCode(): Int {
