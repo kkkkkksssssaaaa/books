@@ -36,3 +36,45 @@ out/
 
 ### VS Code ###
 .vscode/
+
+
+# 공통: 파이썬 캐시
+**/__pycache__/
+**/*.py[cod]
+**/*.pyo
+**/*.pyd
+
+# 공통: Jupyter Notebook 체크포인트
+**/.ipynb_checkpoints/
+
+# 공통: 각 폴더별 venv (venv, .venv 등 이름 불문)
+**/venv/
+**/.venv/
+
+# 공통: VSCode, PyCharm 설정파일
+**/.vscode/
+**/.idea/
+
+# 공통: OS 파일
+.DS_Store
+
+# 공통: pip 환경 생성 파일
+**/pip-log.txt
+
+# 공통: 로그, 임시 파일
+**/*.log
+**/*.tmp
+**/*.swp
+
+# 토큰 키 등 민감 정보 (예: .env)
+**/.env
+**/.env.*
+
+# 파이썬 빌드 아티팩트
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# JupyterLab workspace 설정
+**/.jupyter/lab/workspaces/
