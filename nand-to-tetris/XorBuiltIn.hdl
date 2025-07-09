@@ -1,0 +1,5 @@
+CHIP XorBuiltIn {
+  IN a, b;
+  OUT out;
+  BUILTIN XorBuiltIn;
+}

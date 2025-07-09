@@ -1,0 +1,74 @@
+2024-03-24 23:56:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table [*]user (\000a        id bigint not null,\000a        authority varchar(255),\000a        password varchar(255),\000a        username varchar(255),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        authority varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) [42001-214]
+2024-03-24 23:57:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table [*]user (\000a        id bigint not null,\000a        authority varchar(255),\000a        password varchar(255),\000a        username varchar(255),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        authority varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) [42001-214]
+2024-03-24 23:57:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
+2024-03-24 23:57:35 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table [*]user (\000a        id bigint not null,\000a        authority varchar(255),\000a        password varchar(255),\000a        username varchar(255),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        authority varchar(255),
+        password varchar(255),
+        username varchar(255),
+        primary key (id)
+    ) [42001-214]
+2024-03-24 23:58:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
+2024-03-24 23:58:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
+2024-03-24 23:58:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table [*]user (\000a        id bigint not null,\000a        ""authority"" varchar(255),\000a        ""password"" varchar(255),\000a        ""username"" varchar(255),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        "authority" varchar(255),
+        "password" varchar(255),
+        "username" varchar(255),
+        primary key (id)
+    ) [42001-214]
+2024-03-24 23:59:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
+2024-03-24 23:59:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
+2024-03-24 23:59:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    create table [*]user (\000a        id bigint not null,\000a        ""authority"" varchar(255),\000a        ""password"" varchar(255),\000a        ""username"" varchar(255),\000a        primary key (id)\000a    )"; expected "identifier"; SQL statement:
+
+    create table user (
+        id bigint not null,
+        "authority" varchar(255),
+        "password" varchar(255),
+        "username" varchar(255),
+        primary key (id)
+    ) [42001-214]
+2024-03-24 23:59:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "\000a    drop table if exists [*]user cascade "; expected "identifier"; SQL statement:
+
+    drop table if exists user cascade  [42001-214]
