@@ -1,0 +1,878 @@
+- 387 -
+인지적공감과정서적공감: 정신병리와
+심리재활에의함의*
+박민**
+나사렛대학교
+공감이란타인의정서적상태를이해하고그에정서적으로반응하는능력을말한다. 본논문에서는인지
+적공감과정서적공감에관한연구결과들과두공감의결함에따른심리장애들을개관하였다. 2가지형태
+의공감이존재한다는이론적견해는공감의장애를더잘이해하는데도움이될수있다. 최근의연구결
+과들은인지적공감결함과정서적공감결함사이에행동적수준과신경적수준에서이중해리가나타남
+을보여준다. 예를들면, 자폐증환자는인지적공감의손상을보이지만, 정서적공감의손상은잘보이지
+않는다. 대조적으로, 반사회적성격장애환자는정서적공감의결함을보이지만, 인지적공감의결함은잘
+보이지않는다. 공감장애에대한향후의연구와재활에서행동적요인과신경적요인을결합한다면유용
+할것이다. 거울신경세포체계에근거한공감훈련이공감의장애에대한중재기법으로서도움이될수
+있을것이다.
+주제어: 대학생활, 스트레스, 정신건강
+* 본논문은2012년도나사렛대학교학술연구비지원에의하여연구되었음.
+** 교신저자: 나사렛대학교심리재활학과전임강사(E-mail: minpark@kornu.ac.kr)
+
+-------------------------------------------
+- 388 -
+Ⅰ. 서론
+공감(empathy)이란자기자신의상황에대해서보다는누군가다른사람의상황에대해서더
+욱적절하게일어나는정서적반응(Hoffman, 1987)을가리키는데, 이는다른사람의정서적상
+태에대한관찰자의정서적반응을의미한다. 그러므로공감은정서적전염, 동정, 타인의관점
+수용, 다른사람을도와주는행동등을포함하는상위범주의개념이다(Preston & de Waal,
+2002). 이런공감을인지적공감과정서적공감이라는하위범주로다시분류하기도한다. 다른
+사람의생각, 바람, 믿음, 의도, 인식과같은마음상태를표상하는능력을인지적공감(cognitive
+empathy, CE)이라고하고, 타인의정서상태를공유하고그표현에반응하는능력을정서적공
+감(affective empathy, AE)이라고한다(Blair, 2005; Smith, 2006). 최근들어인지적공감과정서
+적공감이라는두공감능력의해부학적기초가서로다르고(Shamay-Tsoory, Aharon-Peretz,
+& Perry, 2009), 두공감능력에관여하는뇌의신경기제도서로다르다는증거도나타나고있
+다(Krämer, Mohammadi, Doñamayor, Samii, & Münte, 2010).
+공감은인간의사회적행동에서중요한역할을한다. 공감은우리가다른사람들에게해를끼
+치는행동을못하게막고이타적행동을하도록유도한다. 또한어머니와자식, 배우자, 더큰
+사회적집단구성원간의정서적유대형성에도결정적인역할을한다(Singer, 2006). 그러나자
+폐증, 반사회적성격장애, 분열성성격장애와같은정신병리적문제를가지고있는사람들은타
+인의정서상태에둔감하고공감능력이결핍된모습을보여준다. 뿐만아니라장애유형에따
+라인지적공감과정서적공감능력의손상이서로다른양상을보이기도한다. 예를들면, 자
+폐증환자는정서적공감보다인지적공감에더큰어려움을겪는데, 정신병질환자는반대로
+인지적공감이아니라정서적공감능력에문제가생기므로서로다른종류의공감능력에이
+상이생긴것으로보아야한다는것이다(Blair, 2005). 이와같은공감능력의구분은특히공감
+의결핍을보이는정신병리적문제를이해하는새로운관점이될수있고, 손상을보이는공감
+능력을확인하여증진시키는심리재활프로그램개발에그함의를가지고있다.
+본논문에서는인지적공감과정서적공감이라는두가지능력의개념적정의와신경적기초,
+및그측정방법에대해알아보고, 두가지형태의공감의차별적손상이라는관점에서정신병
+리적문제를설명해보고, 두공감능력의증진을통한심리재활프로그램의가능성을살펴보았
+다.
+
+-------------------------------------------
+- 389 -
+Ⅱ. 인지적공감과정서적공감의구분
+1. 정의와신경기초
+공감은타인의정서적상태와경험을이해하고그것에정서적으로반응하는능력으로흔히
+정의되지만(Decety, 2006; Eisenberg, 2000; Singer, 2009), 공감이라는구성개념의정확한정의에
+대하여학자들간의합의는아직없는것으로보인다. 그러나인지적공감과정서적공감이라는
+서로다른공감이존재한다는점에대해서는의견일치가나타나고있다(Cox et al., 2012). 정서
+적공감이타인의정서적경험을공유하는능력이라면인지적공감은타인의정신적시각을받
+아들이는능력이라는것이다.
+Shamay-Tsoory(2009)에따르면, 인지적공감과정서적공감간의결정적차이는인지적공
+감이타인의관점을인지적으로이해하는것인데반하여, 정서적공감은감정의공유도포함한
+다는점이다. 인지적공감의기저에는더많은마음이론과정이존재하고, 정서적공감에는시
+뮬레이션과정이더많이관여한다. 마음이론(Theory of Mind, ToM)이란자기자신과타인의
+믿음, 바람, 의도와같은마음상태를추론하는능력을가리키고, 시뮬레이션(simulation)이란타
+인의마음상태를자기자신의마음상태와일치시켜공명해봄으로써타인의마음상태를표상
+하는것을말한다. 지금까지밝혀진바로는인지적공감과정서적공감발휘에관여하는뇌영
+역도서로다른것으로알려지고있다. 인지적공감이일어날때공통적으로관여하는뇌영역
+은내측전두회(medial frontal gyrus)와전측대상회(anterior cingulate gyrus)를포함하는전전
+두피질영역과후측상측두구(posterior superior temporal sulcus) 및측두-두정연접부
+(temporo-parietal junction) 등이고(박민, 이승복, 김혜리, 윤효운, 2007; Carrington & Bailey,
+2009),
+정서적공감이일어날때는뇌도엽(insula),
+편도체(amygdala),
+하측전두회(inferior
+frontal gyrus) 등의영역이관여한다(Shamay-Tsoory, 2009).
+인지적공감과정서적공감이2가지의서로다른별개의체계라는주장은발달심리학과계통
+발생학의관점에서도등장하였다. 정서적공감은유아기때부터나타나지만, 인지적공감은아
+동기와
+청소년기가
+되어야
+나타나므로
+정서적
+공감이
+인지적
+공감보다
+먼저
+발달한다
+(Chakrabarti & Baron-Cohen, 2006). 또한정서적공감능력은설치류와조류에서도관찰되지만,
+인지적공감능력은침팬지와같은영장류와인간의성인에게서만나타난다(Shamay-Tsoory,
+Aharon-Peretz et al., 2009).
+정신병리적문제가없는사람들은각자저마다의독특한정서적공감과인지적공감의균형
+을보이지만(Kerem, Fishman, & Josselson, 2001), 공감능력의결핍이나타나는경우에는정신
+장애의종류에따라두가지공감능력의손상이해리를보인다. 정신병질, 정신분열, 자기애적
+
+-------------------------------------------
+- 390 -
+성격장애의경우에는주로정서적공감의손상을보이지만(Blair, 2005; Shamay Tsoory et al.,
+2007; Ritter et al., 2011), 자폐증, 양극성장애, 경계선성격장애의경우에는인지적공감의손
+상이크게나타난다(Dziobek et al., 2008; Shamay-Tsoory, Harari, Szepsenwol, & Levkovitz,
+2009; Harari, Shamay-Tsoory, Ravid, & Levkovitz, 2010).
+뇌손상환자들을대상으로한연구결과들도두가지공감의결함이해리를보인다는점을
+뒷받침하고있다. 편도체의양측손상(Hurlemann et al., 2010)과하측전두피질(inferior frontal
+cortex)과전측뇌도엽(anterior insula)의국소손상은정서적공감만손상시키지만(Shamay-Tsoory,
+Harari et al., 2009), 내측전전두피질의손상(Shamay-Tsoory, Aharon-Peretz et al., 2009)을겪게
+되면인지적공감만손상된다.
+뇌영상연구들도정서적공감과인지적공감의신경적기초가서로다르다는점을보여주었
+다. 만화속인물(Völlm et al., 2006)이나그림속인물(Krämer et al., 2010)의감정상태와인
+지상태에대해생각을해보게하였던fMRI 연구들에서는내측전전두피질, 측두-두정접합부
+영역이공통적으로활성화되는것으로나타났다. 그러나인지적조건에서는상측두구영역에서
+높은활성화가나타났지만, 정서적조건에서는전전두피질과편도체영역에서높은활성화를
+보였다.
+또한인지적공감능력이발휘될때는하전두회, 변연상회(supramarginal gyrus), 및상측두구
+영역에서활성화가나타나고, 정서적공감능력이발휘될때는중심전회(precentral gyrus)가활
+성화되었다(Hooker et al., 2010). 인지적공감과는대조적으로정서적공감이일어날때는뇌도
+엽, 뇌간(brainstem), 하두정소엽(inferior parietal lobule), 시상(thalamus) 등의영역(Nummenmaa,
+Hirvonen Parkkola, & Hietanen, 2008)과내측안와전두피질(medial orbitofrontal cortex) 영역
+(Hynes, Baird, & Grafton, 2006)이특히활성화되었다. Fan 등(2011)은공감에대한최근의
+fMRI 연구결과들을메타-분석한결과, 2가지형태의공감을구별하는뇌영역은전측중대상
+피질(anterior midcingulate cortex)과전측뇌도엽(anterior insula)이라는것을확인하였다. 인지
+적공감을할때는전측중대상피질의배측영역이자주활성화되고, 정서적공감을할때에만
+활성화를보이는뇌영역은우반구의전측뇌도엽인것으로나타났다.
+2. 측정
+공감능력의측정은주로질문지형태로이루어져왔다. Mehrabian과Epstein(1972)은33개문
+항으로구성된질문지(Balance Emotional Empathy Scale, BEES)로정서적공감을측정하였고,
+Davis(1983)는인지적및정서적공감을모두평가하는자기-보고척도를개발하였다. 공감척
+도들이사실상서로다른공감의측면을측정하고있다는지적(Chlopan, McCain, Carbonell, &
+Hagen, 1985)이나오면서, 정서적공감만을측정하거나인지적공감과정서적공감을동시에측
+
+-------------------------------------------
+- 391 -
+정하려는자기보고척도들이계속개발되고있다(Baron Cohen & Wheelwright, 2004; Dadds
+et al., 2008; Gerdes, Lietz, & Segal, 2011; Reniers et al., 2011). 국내에서는Baron-Cohen과
+Wheelwright의공감지수(허재홍, 이찬종, 2010; Kim & Lee, 2010), Mehrabian의정서적공감
+척도(김성일, 2010; 정명선, 황경열, 2010), Davis의대인반응성지수(신경일, 1994) 등의한국판
+척도개발이이루어졌다.
+질문지의형태로인지적공감과정서적공감을측정하는예로서, 공감을측정하는연구에서
+널리쓰이고있는대인반응성지수(Interpersonal Reactivity Index, IRI)를들수있다(Davis,
+1983). IRI는28개문항으로구성된자기-보고질문지로두가지공감을모두측정한다. 이질문
+지는각7개문항으로되어있는4가지척도(인지적공감척도와정서적공감척도각2가지)를
+포함하고있다.
+2가지인지적공감척도는관점-수용(perspective-taking) 척도와공상(fantasy) 척도이다. 관
+점-수용척도는타인의심리적관점을자발적으로받아들이는경향성을측정하고(‘나는때때로
+친구들의관점에서는사물이어떻게보이는가를상상해봄으로써내친구들을더잘이해하려고
+노력한다’), 공상척도는상상력을동원하여자신을가상의상황에처하게하는경향성을측정한
+다(‘내가재미있는이야기나소설을읽을때나는이야기속의사건들이나에게일어났다면내
+가어떻게느낄것인지를상상한다’).
+2가지정서적공감척도는공감적관심(empathic concern) 척도와개인적고통(personal
+distress)이다. 공감적관심척도는응답자의온정, 동정심, 타인에대한관심을측정하고(‘나는
+자주나보다운이덜좋은사람들에대해다정하고염려하는기분이든다’), 개인적고통척도는
+긴장된대인상황에서생기는자기-지향적불안과불쾌한감정을측정한다(‘긴박한감정적상황
+에서는겁이난다’).
+질문지형태의공감측정방법이외에도정서적공감을유도하는그림을보거나짧은이야기
+를듣는동안나타나는피부전도, 심박, 호흡등의자율신경계반응의변화를측정하거나(Blair,
+1999), 정서가유발되는상황에처한사람들을묘사하고있는일련의사진들을보여주고사진
+속인물의마음상태를추론하게하거나사진에대한자신의정서적반응을평가하게하여인
+지적공감과정서적공감을측정하는다면적공감검사(Multifaceted Empathy Test, MET)도
+등장하였다(Dziobek et al., 2008).
+정서적공감은사진속얼굴의눈부위에나타난다양한정서표현을재인해내게하거나
+(Baron-Cohen et al., 2001), 심각한협박을당하고있거나해를입고있는사람들을묘사하고
+있는사진을보여주고, 사진속인물의정서적상태와자신의정서적반응을기록하게하여정
+서적전염(emotional contagion)이일어나는지를확인하는(Nummenmaa et al., 2008) 등의방법
+으로측정하기도한다. 인지적공감은다른사람들이특정한사실에대해서사실과는다른틀린
+믿음(false belief)을가지고있음을이해하는가를검사하여확인하기도한다(박민등, 2007;
+
+-------------------------------------------
+- 392 -
+Carrington & Bailey, 2009).
+최근들어서는fMRI와같은뇌기능영상기법으로공감능력을측정하는연구들도등장하고
+있다. 이런연구들의이면에는특정한정서적상태에있는타인을관찰하거나상상을하는것이
+자동적으로관찰자에게도그정서상태의표상을활성화시킴으로써자율신경계반응, 신체적반
+응, 및뇌의반응을불러일으킨다는생각이놓여있다(Preston & de Waal, 2002). 예를들면,
+Nummenmaa 등(2008)은연구참가자들에게일상생활속의상황(인지적공감조건)이나심각한
+위협을당하고있는상황(정서적공감조건)을묘사하고있는사진을제시하고, 그사진속의
+특정인물에게공감을해보라는지시를하고fMRI로각공감조건별로활성화되는뇌영역을
+촬영하여비교하였다.
+인지적공감과정서적공감을여러차원에서구분하는특징들을종합하여표1에제시하였다.
+공감유형
+분류요인
+인지적공감
+정서적공감
+체계
+마음이론:
+관점
+수용,
+미래의
+정서적결과에대한상상, 마음
+읽기
+시뮬레이션: 타인의마음상태
+를모방하여자신의마음상태
+와일치시켜공명
+사례
+“나는
+그가
+요즘
+불행하다고
+느끼고있는것을안다”
+“나는그의괴로움을느낀다”
+측정
+틀린믿음
+개인적고통, 공감적관심, 정
+서재인, 정서적전염
+핵심뇌구조
+복내측전전두피질, 전측대상
+피질, 상측측두구, 측두-두정
+연접부
+하측전두회, 뇌도엽, 편도체
+발달단계
+아동기, 청소년기
+유아기
+계통발생
+영장류(침팬지), 인간
+설치류, 조류
+표1. 인지적공감과정서적공감의구분
+
+-------------------------------------------
+- 393 -
+Ⅲ. 두공감과정신병리
+공감의결핍이라는특징을보이는여러가지정신장애가있다. 이러한다양한형태의공감
+장애의존재는인지적공감과정서적공감에관여하는신경적체계가다르고사회적행동에도
+상이한영향을준다는이중공감모형과잘들어맞는다(Decety & Moriguchi, 2007). 이중공감
+모형이란공감능력에도2가지형태가있고그결함도장애의종류에따라서로다른양상을
+보인다는것이다. 인지적공감에는문제가없으나정서적공감에만손상을보이는장애도있고,
+그반대의경우도있다. 반사회적성격장애, 자기애적성격장애, 정신분열에서는인지적공감능
+력의결함은잘나타나지않지만주로정서적공감능력에손상이있는것으로나타나고, 자폐
+증, 양극성장애, 경계선성격장애환자의경우에는반대로정서적공감능력의손상은크게나
+타나지않지만인지적공감능력은큰손상을보이는이중해리현상이나타난다. 표2에공감
+능력에이상을보이는장애들을결핍내용에따라정리하여제시하였다.
+정서적공감결핍
+인지적공감결핍
+전반적결핍
+전반적과다
+반사회적성격장애
+자기애성격장애
+정신분열
+자폐증
+경계선성격장애
+양극성장애
+분열성성격장애
+전두측두치매
+윌리엄스증후군
+표2. 공감능력의이상을보이는장애
+이러한이중해리를잘보여주는것이자폐증과반사회적성격장애이다(Blair, 2005; Decety
+& Moriguchi, 2007; Singer, 2009). 자폐증또는자폐스펙트럼장애(autistic spectrum disorders,
+ASD)는사회적상호작용의이상, 언어적및비언어적의사소통의결함, 흥미와활동의제한등
+의특징을나타내는전반적발달장애이다. 자폐스펙트럼장애와Asperger 증후군(Asperger
+syndrome, AS) 환자는흔히믿음, 욕구, 또는의도와같은타인의마음상태를읽어내는것을
+어려워한다(Frith, 2004; Sigman, Spence, & Wang, 2006). 예를들어, Dziobek 등(2008)의연구
+결과에따르면, 아스퍼거증후군환자들은정서적공감과제의수행은통제집단참가자들과차
+이가없었고, 인지적공감능력만손상되는것으로나타났다.
+정신병질또는반사회적성격장애(antisocial personality disorder, APD) 환자는주로공감과
+죄책감의결핍, 자기애, 충동성, 이기주의, 타인의도구적이용, 범죄행동, 빈약한행동통제및
+
+-------------------------------------------
+- 394 -
+정서적민감성의변화등의특징을보이는성격장애이다(Hare, & Neumann, 2008; Marshall &
+Marshall, 2011; Soderstrom, 2003). 반사회적성격장애환자는편도체기능에장애가생겨서타
+인의슬픔표현에대한자율신경계의반응이감소하고, 공포와혐오정서표현재인이어려우며,
+정서적공감반응을보이는데어려움을겪지만, 인지적공감능력의결함은보이지않아정서적
+공감능력만선택적으로손상된다(Blair, 2005; Decety & Moriguchi, 2007).
+종합하면, 자폐스펙트럼장애환자는타인의감정을공유하는정서적공감능력의결함은없
+고인지적공감능력만부족하지만, 대조적으로반사회적성격장애환자는타인의사고와믿음
+을이해하는인지적공감능력은손상되지않고정서적공감능력만결핍되어있다.
+또다른이중해리를보여주는장애는경계선성격장애와자기애성격장애이다(Decety &
+Moriguchi, 2007). 경계선성격장애(borderline personality disorder, BPD)의특징은정서조절
+곤란과변동이심하고혼란스러운대인관계이다. 기분, 대인관계, 정체감및행동의불안정하
+고, 자기개념의혼란과자기파괴적행동이나타나며, 타인에대한공격성폭발로이어지는충
+동통제의심한결함을보인다. 경계선성격장애환자는Davis(1983)의IRI 검사에서인지적공
+감척도의점수보다정서적공감척도의점수가더높은것으로보고되었는데(Harari et al.,
+2010), 이는전전두피질과편도체와같은뇌영역의기능에이상이있기때문인것으로생각된
+다. 경계선성격장애환자는정서를표현하는얼굴표정에대해서는정상인보다편도체의활성
+화가더크게나타나지만, 정서조절과관련된전전두피질영역의활성화는더적게나타난다.
+편도체는과잉기능을하고, 전전두피질은과소기능을함으로써결국정서적공감능력만높
+이는것으로보인다.
+자기애적성격장애(narcissistic personality disorder, NPD) 환자도타인의곤궁함이나감정인
+식에어려움을겪는다. 타인이관심사나문제를자신과공유하거나의논하려고할때거부하거
+나, 경멸하며, 참지못한다. 또한타인에게상처를주는자신의행동이나말을알아차리지못한
+다. 정서적으로냉정하고, 거만하고경멸적이며건방진태도를취하며, 자신의필요와기대가충
+족되지않을때에는타인을잽싸게비난하고비판한다. Ritter 등(2011)의연구에서, 자기애적성
+격장애환자는Davis(1983)의IRI 검사와Dziobek 등(2008)의다면적공감검사(MET)의정서적
+공감평가에서는심한손상을보였지만, 인지적공감능력에서는결함을보이지않았다. 이는
+자기애적성격장애환자는정서적공감과관련된신경요소가감소하기때문인것으로추정되
+고있다.
+이처럼, 경계선성격장애환자는인지적공감능력에서만결함이나타나고, 자기애적성격장애
+환자는정서적공감능력만심하게손상되는패턴을보인다.
+이외에도, 정신분열환자는음성증상의수준이높을수록정서적공감능력이손상되고
+(Shamay-Tsoory et al., 2007), 양극성장애환자는IRI 검사의인지적공감척도와마음이론
+과제수행점수는저조하였지만, 정서적공감척도점수는높은것으로나타나서인지적공감
+
+-------------------------------------------
+- 395 -
+능력만결함을보인다(Shamay Tsoory, Harari et al., 2009).
+또한Yeo 등(2011)에따르면, 공감척도및공격성을측정하는질문지를이용하여싱가포르의
+초등학교4~5학년남학생을대상으로심각한형태의학교폭력인집단괴롭힘행동(bullying
+behavior)에미치는2가지공감의영향을다중회귀분석으로알아본결과, 정서적공감은신체
+적공격성(주먹으로때리기와발로차기)과관련이있고, 인지적공감은간접적공격성(남의소
+문퍼뜨리기)과관련되어있음을발견하였다. Yeo 등(2011)은공격성의기저에는공감의결함문
+제가있는데, 정서적공감에결함이있는아동은높은신체적공격성을보이게되고, 인지적공
+감에결함이있는아동은간접적공격성을보이게된다는결론을내렸다.
+전반적으로2가지공감능력이모두결함을보이거나오히려두공감능력의과다를보이는
+장애도
+있다.
+분열성
+성격장애(schizoid
+personality
+disorder,
+SPD)와
+전두측두
+치매
+(frontotemporal dementia, FTD) 환자는인지적및정서적공감능력이모두결함을보이지만,
+윌리엄스증후군(Williams syndrome, WS) 환자는두공감능력이전반적으로과다한상태이다.
+분열성성격장애환자들은혼자있기를좋아하고, 사회적온정을경험하거나타인에대한깊
+은감정을품을수가없다. 타인을칭찬하거나비판하는데무관심하고, 사회적상호작용과도덕
+성을이해하는데어려움을겪으며, 사교모임을무시한다. Smith(2006)에따르면, 분열성성격장
+애환자의이런임상적특징들은정서적공감과인지적공감이모두손상되어있음을가리킨다.
+윌리엄스증후군환자들은타인의고통에열중하고, 친구, 친척, 심지어낯선사람의복지에대
+해자주걱정을하며과도한사교성을보인다. 다른한편으로는, 언어적및사회적기술과재치
+가뛰어나고, 사회적상황을조종할수도있으며, 마음이론능력을측정하는틀린믿음과제를
+잘수행할수있다. 윌리엄스증후군의이런특징들은정서적공감과인지적공감이모두과다
+함을보여준다.
+공감능력의상실이라는현저한특징을보이는전두측두치매환자들의경우, Davis(1983)의
+IRI로2가지공감을측정한결과, 정상노인에비해공감적관심과관점수용척도의점수가감
+소한것으로나타나서2가지공감이모두손상을보였다(Lough et al., 2006). IRI로공감을측정
+한다른연구들에서도전두측두치매환자들은알츠하이머병이나의미치매(semantic dementia)
+와같은다른치매노인들에비해인지적공감(관점수용)과정서적공감(정서적전염) 능력이
+모두손상되는것으로나타났다(Rankin, Kramer, & Miller, 2005; Rankin et al., 2006). 이는전
+두측두치매환자들의뇌에서2가지공감에관여하는전두엽및측두엽영역이둘다손상되기
+때문인것으로보인다.
+종합하여보면, 정서적및인지적공감이2가지의서로다른능력이라는관점은공감능력에
+결함을보이는여러장애들의임상적특징을더잘구분할수있게해주고, 손상을보이는특정
+결함을증진시키는전략에기초한공감훈련을마련하는것이공감장애에중요한심리재활방
+법이될수있다는통찰을얻게해준다.
+
+-------------------------------------------
+- 396 -
+Ⅳ. 두공감의심리재활에의함의
+인지적공감과정서적공감능력을향상시키기위한훈련프로그램에서는인지적공감은주
+로관점및역할수용(다양한관점에서세상바라보기, 사이코드라마에서역할바꾸기등) 연습
+을통하여훈련시키고, 정서적공감은정서의변별및일치(타인의얼굴표정으로정서상태확
+인, 타인의정서적반응공유등)를통하여훈련을시킨다(Pecukonis, 1990). 공감의결함을보이
+는장애를가지고있는사람들을위하여만들어진공감훈련프로그램은아동이나청소년, 정상
+성인들을대상으로하지않고, 대부분자폐증을대상으로한것이었다.
+예를들면, 자폐스펙트럼아동을대상으로정서이해를향상시키기위해고안된애니메이션
+시리즈DVD를4주동안매일시청하게한결과, DVD 시청집단에속한자폐스펙트럼아동은
+타인의얼굴표정인식과그에대한반응을보이는능력이향상되었다(Baron-Cohen, Golan, &
+Ashwin, 2009). 또한아스퍼거증후군이나고기능자폐를보이는성인을대상으로얼굴과목소
+리의복잡한정서를인식하도록가르치는컴퓨터프로그램을집에서10~15주동안사용하게한
+결과, 복잡한정서상태를인식하고프로그램에등장하는인물의마음상태를이해하는능력이
+향상되었다(Golan & Baron-Cohen, 2006).
+아직까지자폐증을제외한공감능력의결핍을보이는다른장애환자를대상으로한공감
+재활프로그램은찾아보기어렵지만, 공감의신경적기초를고려하여신경심리학적수준에서의
+공감능력재활방법이제안되고있다. 공감을뇌세포수준에서표상하는뇌영역들로알려진
+거울신경세포체계(mirror neuron system, MNS)를이용하여인지적공감과정서적공감을향
+상시키는방법이다(Brüne & Ebert, 2011). 거울신경세포들은뇌의복측전운동피질(ventral
+premotor cortex)과하측두정소엽(inferior parietal lobule)에존재하고있는데, 이런영역들이
+MNS를형성하고있다.
+MNS는타인의행위를관찰하여그에상응하는움직임을관찰자자신의뇌에표상하는것으
+로알려진기제이다. 이기제는행위의이해에서그행위의모방과의도의부호화, 구체화시뮬
+레이션(embodied simulation)을통한공감에이르는고차적인기능에도관여한다(Buccino &
+Amore, 2008). 구체화시뮬레이션이란타인의사고, 믿음, 정서등을마치자신이경험하고있는
+것처럼마음속으로흉내를내어이해하는것을말한다.
+MNS는행위이해, 모방, 공감, 및공감기제를통한정서상태조절에까지관여하는데, 이
+MNS의해부학적구조와그기능의이상이결국자폐증(Buccino & Amore, 2008; Iacoboni &
+Mazziotta, 2007; Iacoboni & Mirella, 2006; Yuan & Hoff, 2008)과정신분열(Brüne & Ebert,
+2011; Buccino & Amore, 2008) 환자가보이는공감결함의토대라고할수있다. 예를들면, 자
+
+-------------------------------------------
+- 397 -
+폐스펙트럼장애환자는정상인에비해하측전두피질, 하측두정소엽, 상측측두구등과같
+은MNS에속하는뇌영역이얇고(Hadjikhani et al., 2006), 타인의얼굴정보를처리할때
+MNS 영역의활성화가제대로나타나지않는다(Hadjikhani et al., 2007). 이런MNS 영역의구
+조와기능의이상이공감결함을초래한다는것이다.
+또한정신분열환자는흔히타인의행위인식, 얼굴표정을통한정서표현, 타인의얼굴표
+정에나타난정서재인등을할수없다. Fahim 등(2004)은부정적정서를담고있는그림을보
+는동안, 평탄한정서(flat affect)를보이는정신분열환자는MNS 영역에서거울신경세포들의
+활성화가나타나지않음을보고하였는데, 이는정신분열환자의정서적공감결핍을지지하는
+것이라고할수있다.
+MNS에기초한공감재활의근거는뇌의MNS 영역도가소성(plasticity)이있기때문에, 그
+기능을극대화하기위하여여러가지경험과감각자극, 뇌자극등을통하여이영역의활성화
+를유도하면, 기존의거울신경세포들의시냅스의연결성이변경되거나새로운시냅스생성이
+이루어질수있다는것이다(Yuan & Hoff, 2008).
+뇌의MNS 영역을자극하거나활성화를유도하는데효과적인것으로소개되고있는방법으로
+는바이오피드백, 음악활동, 무용/동작등이있다. Thompson, Thompson, 및Reid(2009)에따르
+면, 정서상태읽기와반영하기의곤란, 외부세상에대한주의집중과자기조절기술의빈약
+등의증상을보이는아스퍼거증후군환자를대상으로뉴로피드백(neurofeedback)이라고부르는
+EEG 바이오피드백(biofeedback) 훈련을제안하였다. 아스퍼거증후군환자들은MNS를포함하
+는공감과관련된뇌영역에서비정상적인뇌파가나타나는데, 이를바이오피드백을통하여정
+상적인뇌파가나타나도록훈련할수있다는것이다.
+Wan 등(2010)은MNS 영역을자극하는중재기법으로음악활동(music making)을제안하였
+다. 같이악기를연주하거나노래를부르는것과같은타인과의음악활동이뇌의MNS 영역의
+관여를이끌어낸다는것이다. 음악활동을함으로써타인에게주의를집중하고타인과상호작용
+하는능력을향상시켜서의사소통과사회적기술의발달을촉진할수있는데, 많은자폐아동이
+음악활동에참가하는것을즐거워하기때문에더욱잠재력이크다고주장하였다.
+또다른뇌의MNS 영역을자극방법은무용/동작치료(Dance/Movement Therapy, DMT)하
+고부르는방법이다(Berrol, 2006; McGarry & Russo, 2011). 다른사람이어떤동작을실행하는
+것을단지지켜보기만해도실제로그동작을하는것만큼이나동일한거울신경세포들이신경
+흥분을일으킨다. 이미행동적수준에서는타인의행동모방(imitation)이자폐증에효과적인재
+활방법으로알려져있다(Iacoboni & Mazziotta, 2007; Iacoboni & Mirella, 2006). DMT에서는
+춤을추면서상대방의동작, 정서, 의도등을모방하여따라해보는반영하기(mirroring)가거울
+신경세포회로의이용을강화시켜서타인의정서적의도이해와공감능력을향상시킬수있다
+고본다.
+
+-------------------------------------------
+- 398 -
+아직자폐증이나정신분열환자등을대상으로MNS 뇌영역을자극하는기법을시행하여인
+지적및정서적공감에어떤영향을미치는가를경험적으로알아본연구는찾아보기가어렵지
+만, 이러한MNS 뇌영역의가소성에기반을둔공감훈련프로그램의구성과, 공감의결핍을
+보이는여러장애를가지고있는환자들을대상으로하는효과검증연구가이루어진다면공감
+능력의연구와재활에대한새로운접근이될수있을것이다.
+Ⅴ. 결론및제언
+공감은사회적안녕과정서적건강에중요한역할을한다. 타인이느끼고있는것을이해하고
+그정서적상태를적절하게공유하는공감능력이사회적상황에적절하게반응할수있게해
+주기때문이다. 우리가흔히말하는공감능력도크게나누어보면인지적공감과정서적공감으
+로구분할수있다. 인지적공감이타인의마음상태를이해하는것이라면, 정서적공감은타인
+의감정상태를이해하는것이라고할수있다. 뇌손상환자나공감의장애를보이는사람들을
+대상으로한뇌영상연구결과들은인지적공감만결함을보이거나정서적공감만결함을보
+이는이중해리현상과2가지공감의신경적기초를이루는서로다른뇌영역들이있음을보
+여주었다. 많은정신장애가공감의결핍과관련이되어있는데, 인지적공감과정서적공감이
+서로다른형태의공감능력이라는이런이론적접근은공감의장애를연구하는유용한도구이
+자공감장애의재활전략을제공할수있는방법이다. 공감능력에정신병리적결함을보이는
+사람들을연구함으로써효과적재활방법의개발과정상인의공감기제도더잘이해하는것이
+가능해질것이다. 거울신경세포체계를이루는뇌영역의가소성에기반을둔공감훈련프로
+그램이다양한공감의장애를보이는환자들의공감능력재활에효과를발휘할수있는잠재
+력이있는것으로생각된다.
+현재까지의연구결과들을개관한결과, 자폐증과정신분열이외의공감결함장애에대한경
+험적연구가부족하고, 뇌기능영상과같은질문지가아닌형태의공감측정방법을이용한연
+구도초기단계인것으로생각된다. 또한인지적공감과정서적공감능력을구분하여훈련시키
+려는프로그램과거울신경세포체계의가소성과같은공감의신경적기초를이용한공감재활
+프로그램의개발과그효과를검증하려는연구도많지않은것으로보인다. 향후연구에서는공
+감의결함을보이는더욱다양한장애환자들을대상으로뇌영상기법과같은신경적측정방
+법을이용하여공감능력의보존과손상을알아보는것이필요한것으로생각된다. 이러한행동
+적수준과신경적수준모두에서의연구결과들이축적된다면공감능력과그결함을더잘설
+명할수있는이론의개발과그에바탕을둔더욱효과적이고다양한공감훈련프로그램의개
+발이이루어질수있을것이다.
+
+-------------------------------------------
+- 399 -
+참고문헌
+김성일(2010). 청소년을위한정의적공감검사의타당화. 청소년학연구, 17(11), 1-25.
+박민, 이승복, 김혜리, 윤효운(2007). 마음이론의신경기초. 한국심리학회지: 일반, 26(2),
+39-62.
+신경일(1994). 공감의인지적, 정서적요소및표현적요소간의관계. 부산대학교학생생활연
+구소연구보, 29(1), 1-37.
+정명선, 황경열(2010). 균형정서공감척도의타당화예비연구. 상담학연구, 11(2), 413-428.
+허재홍, 이찬종(2010). 공감지수(EQ) 척도의심리측정속성. 인문과학연구, 24, 183-200. 강원
+대학교인문과학연구소.
+Baron-Cohen, S., & Wheelwright, S. (2004). The empathy quotient: An investigation of
+adults
+with
+Asperger
+syndrome
+or
+high
+functioning
+autism,
+and
+normal
+sex
+differences. Journal of Autism and Developmental Disorders, 34(2), 163-175.
+Baron-Cohen, S., Golan, O., & Ashwin, E. (2009). Can emotion recognition be taught to
+children with autism spectrum conditions? Philosophical Transactions of the Royal
+Society: Biological Sciences, 364(1535), 3567-3574.
+Baron-Cohen, S., Wheelwright S., Hill J., Raste Y., & Plumb, I. (2001). The “Reading the
+Mind in the Eyes”Test revised version: A study with normal adults, and adults with
+Asperger syndrome or high-functioning autism. Journal of Child Psychology and
+Psychiatry, 42(2), 241-251.
+Berrol, C. F. (2006). Neuroscience meets dance/movement therapy: Mirror neurons, the
+therapeutic process and empathy. The Arts in Psychotherapy, 33(4), 302-315.
+Blair, R. J. R. (1999). Psychophysiological responsiveness to the distress of others in children
+with autism. Personality and Individual Differences, 26(3), 477-485.
+Blair, R. J. R. (2005). Responding to the emotions of others: Dissociating forms of empathy
+through
+the
+study
+of
+typical
+and
+psychiatric
+populations.
+Consciousness
+and
+Cognition, 14(4), 698-718.
+Brüne, M., & Ebert, A. (2011). From social neurons to social cognition: Implications for
+schizophrenia research.
+Journal
+of Psychiatry and Neurological
+Sciences, 24(1),
+58-68.
+Buccino, G., & Amore, M. (2008). Mirror neurons and the understanding of behavioural
+symptoms in psychiatric disorders. Current Opinion in Psychiatry, 21(3), 281-285.
+Carrington, S. J., & Bailey, A. J. (2009). Are there theory of mind regions in the brain? A
+review of the neuroimaging literature. Human Brain Mapping, 30(8), 2313-2335.
+Chakrabarti,
+B.,
+&
+Baron-Cohen,
+S.
+(2006).
+Empathizing:
+Neurocognitive
+developmental
+
+-------------------------------------------
+- 400 -
+mechanisms and individual differences. In S. Anders, G. Ende, M. Junghofer, J.
+Kissler
+&
+Wildgruber,
+D
+(Eds.),
+Progress
+in
+brain
+research:
+Vol.
+156.
+Understanding emotions (pp. 403-417). Amsterdam: Elsevier.
+Chlopan, B. E., McCain, M. L., Carbonell, J. L., & Hagen, R. L. (1985). Empathy: Review of
+available measures. Journal of Personality and Social Psychology, 48(3), 635-653.
+Cox, C. L., Uddin, L. Q., Di Martino, A., Castellanos, F. X., Milham, M. P., & Kelly, C.
+(2012). The balance between feeling and knowing: Affective and cognitive empathy
+are reflected in the brain's intrinsic functional dynamics.
+Social Cognitive and
+Affective Neuroscience, 7(6), 727-737.
+Dadds, M. R., Hunter, K., Hawes, D. J., Frost, A. D., Vassallo, S., Bunn, P., Merz, S., & El
+Masry, Y. (2008). A measure of cognitive and affective empathy in children using
+parent ratings. Child Psychiatry and Human Development, 39(2), 111-122.
+Davis,
+M.
+H.
+(1983).
+Measuring
+individual
+differences
+in
+empathy:
+Evidence
+for
+a
+multidimensional approach.
+Journal of Personality and Social Psychology, 44(1),
+113-126.
+Decety, J., & Jackson, P. L. (2006). A social-neuroscience perspective on empathy. Current
+Directions in Psychological Science, 15(2), 54-58.
+Decety, J., & Moriguchi, Y. (2007). The empathic brain and its dysfunction in psychiatric
+populations:
+Implications
+for
+intervention
+across
+different
+clinical
+conditions.
+Biopsychosocial Medicine, 1, 22-65.
+Dziobek, I., Rogers, K., Fleck, S., Bahnemann, M., Heekeren, H. R., Wolf, O. T., & Convit, A.
+(2008). Dissociation of cognitive and emotional empathy in adults with Asperger
+syndrome using the Multifaceted Empathy Test (MET). Journal of Autism and
+Developmental Disorders, 38(3), 464-473.
+Eisenberg,
+N.
+(2000).
+Emotion,
+regulation,
+and
+moral
+development.
+Annual
+Review
+of
+Psychology, 51, 665-697.
+Fahim, C., Stip, E., Mancini-Marïe, A., Boualem, M., Malaspina, D., & Beauregard, M. (2004).
+Negative
+socio-emotional
+resonance
+in
+schizophrenia:
+A
+functional
+magnetic
+resonance imaging hypothesis. Medical Hypotheses, 63(3), 467-475.
+Fan, Y., Duncan, N. W., de Greck, M., & Northoff, G. (2011). Is there a core neural network
+in
+empathy?
+An
+fMRI
+based
+quantitative
+meta-analysis.
+Neuroscience
+and
+Biobehavioral Reviews, 35(3), 903-911.
+Frith,
+U. (2004). Emanuel Miller lecture: Confusions and controversies about Asperger
+syndrome. Journal of Child Psychology and Psychiatry, 45(4), 672-686.
+Gerdes, K. E., Lietz, C. A., & Segal, E. A. (2011). Measuring empathy in the 21st century:
+
+-------------------------------------------
+- 401 -
+Development of an empathy index rooted in social cognitive neuroscience and social
+justice. Social Work Research, 35(2), 83-94.
+Golan, O., & Baron-Cohen, S. (2006). Systemizing empathy: Teaching adults with Asperger
+syndrome
+or
+high-functioning
+autism
+to
+recognize
+complex
+emotions
+using
+interactive multimedia. Development and Psychopathology, 18(2), 591-617.
+Hadjikhani,
+N.,
+Joseph,
+R.
+M.,
+Snyder,
+J.,
+&
+Tager-Flusberg,
+H.
+(2006).
+Anatomical
+differences in the mirror neuron system and social cognition network in autism.
+Cerebral Cortex, 16(9), 1276-1282.
+Hadjikhani, N., Joseph, R. M., Snyder, J., & Tager-Flusberg, H. (2007). Abnormal activation
+of the social brain during face perception in autism. Human Brain Mapping, 28(5),
+441-449.
+Harari, H., Shamay-Tsoory, S. G., Ravid, M., & Levkovitz, Y. (2010). Double dissociation
+between
+cognitive
+and
+affective
+empathy
+in
+borderline
+personality
+disorder.
+Psychiatry Research, 175(3), 277-279.
+Hare, R. D., & Neumann, C. S. (2008). Psychopathy as a clinical and empirical construct.
+Annual Review of Clinical Psychology, 4, 217-246.
+Hoffman, M. L. (1987). The contribution of empathy to justice and moral judgment. In N.
+Eisenberg & J. Strayer (Eds.), Empathy and its development (pp. 47-80). New York:
+Cambridge University Press.
+Hooker, C. I., Verosky, S. C., Germine, L. T., Knight, R. T., & D’Esposito, M. (2010). Neural
+activity during social signal perception correlates with self-reported empathy. Brain
+Research, 1308, 100-113.
+Hynes, C. A., Baird, A. A., & Grafton, S. T. (2006). Differential role of the orbital frontal
+lobe
+in
+emotional
+versus
+cognitive
+perspective-taking.
+Neuropsychologia,
+44(3),
+374-383.
+Iacoboni, M,, & Mazziotta, J. C. (2007). Mirror neuron system: Basic findings and clinical
+applications. Annals of Neurology, 62(3), 213-218.
+Iacoboni, M., & Mirella, D. (2006). The mirror neuron system and the consequences of its
+dysfunction. Nature Reviews Neuroscience, 7(12), 942-951.
+Kerem, E., Fishman, N., & Josselson, R. (2001). The experience of empathy in everyday
+relationships: Cognitive and affective elements.
+Journal of Social
+and Personal
+Relationships, 18(5), 709-729.
+Kim, J.-H., & Lee, S. J. (2010). Reliability and validity of the Korean version of the empathy
+quotient scale. Psychiatry Investigation, 7(1), 24-30.
+Krämer, U. M., Mohammadi, B., Doñamayor, N., Samii, A., & Münte, T. F. (2010). Emotional
+
+-------------------------------------------
+- 402 -
+and
+cognitive
+aspects
+of
+empathy
+and
+their
+relation
+to
+social
+cognition An
+fMRI-study. Brain Research, 1311, 110-120.
+Lough, S., Kipps, C. M., Treise, C., Watson, P., Blair, J. R., & Hodges, J. R. (2006). Social
+reasoning, emotion and empathy in frontotemporal dementia. Neuropsychologia, 44(6),
+950-958.
+Marshall, L. E., & Marshall, W. L. (2011). Empathy and antisocial behaviour. Journal of
+Forensic Psychiatry & Psychology, 22(5), 742-759.
+McGarry, L. M., & Russo, F. A. (2011). Mirroring in dance/movement therapy: Potential
+mechanisms
+behind
+empathy
+enhancement.
+The
+Arts
+in
+Psychotherapy,
+38(3),
+178-184.
+Mehrabian,
+A.,
+&
+Epstein,
+N.
+(1972).
+A
+measure
+of
+emotional
+empathy.
+Journal
+of
+Personality, 40(4), 525-543.
+Nummenmaa, L., Hirvonen, J., Parkkola, R., & Hietanen, J. K. (2008). Is emotional contagion
+special? An fMRI study on neural systems for affective and cognitive empathy.
+NeuroImage, 43(3), 571-580.
+Pecukonis, E. V. (1990). A cognitive/affective empathy training program as a function of ego
+development in aggressive adolescent females. Adolescence, 25(97), 59-76.
+Preston, S. D., & de Waal, F. B. M. (2002). Empathy: Its ultimate and proximate bases.
+Behavioral and Brain Sciences, 25(1), 1-72.
+Rankin, K. P., Gorno-Tempini, M. L., Allison, S. C., Stanley, C. M., Glenn, S., Weiner, M.
+W., & Miller, B. L. (2006). Structural anatomy of empathy in neurodegenerative
+disease. Brain, 129(11), 2945-2956.
+Rankin, K. P., Kramer, J. H., & Miller, B. L. (2005). Patterns of cognitive and emotional
+empathy in frontotemporal lobar degeneration. Cognitive and Behavioral Neurology,
+18(1), 28-36.
+Reniers, R. L., Corcoran, R., Drake, R., Shryane, N. M., & Völlm, B. A. (2011). The QCAE:
+A
+questionnaire
+of
+cognitive
+and
+affective
+empathy.
+Journal
+of
+Personality
+Assessment, 93(1), 84-95.
+Ritter, K., Dziobek, I., Preisβler, S., Rüter, A., Vater, A., Fydrich, T., Lammers, C. H.,
+Heekeren, H. R., & Roepke, S. (2011). Lack of empathy in patients with narcissistic
+personality disorder. Psychiatry Research, 187(1-2), 241-247.
+Shamay-Tsoory, S. G. (2009). Empathic processing: Its cognitive and affective dimensions
+and neuroanatomical basis. In J. Decety & W. Ickes (Eds.), The social neuroscience
+of empathy (pp. 215-232). Cambridge, MA: The MIT Press.
+Shamay-Tsoory, S. G., Aharon-Peretz, J., & Perry, D. (2009). Two systems for empathy: A
+
+-------------------------------------------
+- 403 -
+double dissociation between emotional and cognitive empathy in inferior frontal gyrus
+versus ventromedial prefrontal lesions. Brain, 132(3), 617-627.
+Shamay-Tsoory, S. G., Shur, S., Barcai-Goodman, L., Medlovich, S., Harari, H., & Levkovitz,
+Y. (2007). Dissociation of cognitive from affective components of theory of mind in
+schizophrenia. Psychiatry Research, 149(1-3), 11-23.
+Shamay-Tsoory, S., Harari, H., Szepsenwol, O., & Levkovitz, Y. (2009). Neuropsychological
+evidence of impaired cognitive empathy in euthymic bipolar disorder. Journal of
+Neuropsychiatry and Clinical Neurosciences, 21(1), 59-67.
+Sigman,
+M.,
+Spence,
+S.
+J.,
+& Wang,
+A.
+T.
+(2006).
+Autism from developmental
+and
+neuropsychological perspectives. Annual Review of Clinical Psychology, 2, 327-355.
+Singer, T. (2006). The neural basis and ontogeny of empathy and mind reading: Review of
+literature
+and
+implications
+for
+future
+research.
+Neuroscience
+and
+Biobehavioral
+Reviews, 30(6), 855-863.
+Singer, T. (2009). Understanding others: Brain mechanisms of theory of mind and empathy.
+In
+P.
+W.
+Glimcher,
+C.
+F.
+Camerer,
+E.
+Fehr,
+&
+R.
+A.
+Poldrack
+(Eds.),
+Neuroeconomics:
+Decision making and the brain (pp. 251-268). Sandiego, CA:
+Academic Press.
+Singer, T., & Lamm, C. (2009). The social neuroscience of empathy. Annals of the New
+York Academy of Sciences, 1156, 81-96.
+Smith,
+A.
+(2006).
+Cognitive
+empathy
+and
+emotional
+empathy
+in
+human
+behavior
+and
+evolution. Psychological Record, 56(1), 3-21.
+Soderstrom, H. (2003). Psychopathy as a disorder of empathy. European Child & Adolescent
+Psychiatry, 12(5), 249-252.
+Thompson, L., Thompson, M., & Reid, A. (2009). Functional neuroanatomy and the rationale
+for
+using
+EEG
+biofeedback
+for
+clients
+with
+Asperger's
+syndrome.
+Applied
+Psychophysiology and Biofeedback, 35(1), 39-61.
+Völlm, B. A., Taylor, A. N. W., Richardson, P., Corcoran, R., Stirling, J., McKie, S., Deakin,
+J. F. W., & Elliott, R. (2006). Neuronal correlates of theory of mind and empathy: A
+functional magnetic resonance imaging study in a nonverbal task.
+NeuroImage,
+29(1), 90-98.
+Wan, C. Y., Demaine, K., Zipse, L., Norton, A., & Schlaug, G. (2010). From music making to
+speaking: Engaging the mirror neuron system in autism. Brain Research Bulletin,
+82(3-4), 161-168.
+Yeo, L. S., Ang, R. P., Loh, S., Fu, K. J., & Karre, J. K. (2011). The role of affective and
+cognitive empathy in physical, verbal, and indirect aggression of a Singaporean
+
+-------------------------------------------
+- 404 -
+sample
+of
+boys.
+Journal
+of
+Psychology:
+Interdisciplinary
+and Applied,
+145(4),
+313-330.
+Yuan, T. F., & Hoff, R. (2008). Mirror neuron system based therapy for emotional disorders.
+Medical Hypotheses, 71(5), 722-726.
+원고접수일: 2012년
+10월15일
+수정제출일: 2012년
+11월28일
+게재확정일: 2012년
+12월16일
+
+-------------------------------------------
+- 405 -
+Cognitive and Affective Empathy: Implications for
+Psychopathology and Psychological Rehabilitation
+Park, Min
+Korea Nazarene University
+Empathy is the ability to understand other people’s emotional state and to react affectively. In this
+article, the research literature conducted on cognitive empathy and affective empathy is selectively
+reviewed. Many psychiatric disorders associated with deficits of those two kinds of empathy are
+provided. Two forms of empathy perspective can be helpful in allowing us to better understand
+empathy disorders. Recent findings show a behavioral and neural double dissociation between deficits in
+cognitive empathy and affective empathy. For instance, individuals with autism show impairment in
+cognitive empathy but not affective empathy. In contrast,
+individuals with antisocial personality
+disorders show deficits in affective empathy but not cognitive empathy. Future investigation and
+rehabilitation of empathy disorders can be useful if behavioral and neurological factors are combined.
+Empathy training based on mirror neuron system may be helpful in intervention of disorders associated
+with empathic dysfunction.
+Key Word: cognitive empathy, affective empathy, psychopathology, psychological rehabilitation
+
+-------------------------------------------
