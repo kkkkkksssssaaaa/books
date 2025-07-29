@@ -1,0 +1,37 @@
+[
+    {
+        "no": 1,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo is smiling.\n- (2) The person in the photo is wearing a white shirt.\n- (3) The person in the photo has long hair.\n- (4) The person in the photo is male.",
+        "image": "Off The Record (11).jpg"
+    },
+    {
+        "no": 2,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo is wearing a white shirt.\n- (2) The person in the photo has long hair.\n- (3) The person in the photo is on a pink background.\n- (4) The person in the photo is wearing a watch on their wrist.",
+        "image": "Off The Record (5).jpg"
+    },
+    {
+        "no": 3,
+        "eng": "Which of the following descriptions about the image is incorrect?  \n- (1) The person in the photo is wearing a white dress.  \n- (2) The person in the photo has flowers in her hair.  \n- (3) The image evokes a winter scene.  \n- (4) The person in the photo has an expressive facial expression.",
+        "image": "황녀.jpg"
+    },
+    {
+        "no": 4,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo has long hair.\n- (2) The person in the photo is wearing a pink hair accessory.\n- (3) The person in the photo is wearing black clothing.\n- (4) The background of the photo is red.",
+        "image": "Off The Record (51).jpg"
+    },
+    {
+        "no": 5,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo is wearing a white dress.\n- (2) The person in the photo is smiling.\n- (3) The person in the photo has short hair.\n- (4) The person in the photo is cupping their face with their hand.",
+        "image": "황녀2.jpg"
+    },
+    {
+        "no": 6,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo has short hair.\n- (2) The person in the photo is wearing part of a red outfit.\n- (3) The person in the photo is covering one side of their face.\n- (4) The person in the photo is wearing earrings.",
+        "image": "Off The Record (38).jpg"
+    },
+    {
+        "no": 7,
+        "eng": "Which of the following descriptions about the image is incorrect?\n- (1) The person in the photo is wearing a black tie.\n- (2) The person in the photo has long hair.\n- (3) The person in the photo is wearing a white shirt.\n- (4) The person in the photo has their hair tied up.",
+        "image": "Off The Record (18).jpg"
+    }
+]
