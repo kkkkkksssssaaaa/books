@@ -284,3 +284,5 @@ __pypackages__/
 **/streamlit/secrets.toml
 
 **/share/
+
+**/*.pdf
